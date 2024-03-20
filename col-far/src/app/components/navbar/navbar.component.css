@@ -1,0 +1,40 @@
+.container {
+  max-width: 130rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+.navbar {
+  text-decoration: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  padding-left: 3rem;
+  font-weight: 700;
+}
+
+.navbar a:first-of-type {
+  padding-left: 0;
+}
+
+.button-turnos {
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: white;
+  padding: 0.9rem 1.5rem;
+  background-color: var(--primary);
+  border-radius: 10rem;
+  text-transform: uppercase;
+}
+
+.button-turnos span {
+  color: var(--secondary);
+}
