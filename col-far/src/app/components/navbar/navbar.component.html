@@ -1,12 +1,37 @@
 <nav class="container flex">
-  <div class="logo">logito</div>
-  <div class="navbar">
+  <div class="logo">
+    <img src="../../../assets/logo.svg" alt="logo colegio farm" class="logo" />
+  </div>
+  <div class="navbar d-none d-lg-block">
     <a href="">Institucional</a>
     <a href="">Farmacias</a>
     <a href="">Novedades</a>
     <a href="">Contacto</a>
   </div>
-  <div class="turnos">
-    <button class="button-turnos"> + Farmacias de <span>Turno</span></button>
+  <div class="d-lg-none">
+    <button
+      class="btn"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasRight"
+      aria-controls="offcanvasRight"
+    >
+      x
+    </button>
+
+    <div
+      class="offcanvas offcanvas-end w-75 bg-light show"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header logo-position-screen">
+        <img src="../../../assets/logo-mob-menu.svg" alt="" class="logo" />
+      </div>
+      <div class="offcanvas-body"></div>
+    </div>
+  </div>
+  <div class="turnos d-none d-lg-block">
+    <button class="button-turnos">+ Farmacias de <span>Turno</span></button>
   </div>
 </nav>

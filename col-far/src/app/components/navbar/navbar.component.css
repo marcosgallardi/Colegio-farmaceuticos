@@ -19,10 +19,29 @@
   text-decoration: none;
   padding-left: 3rem;
   font-weight: 700;
+  color: var(--primary);
 }
 
 .navbar a:first-of-type {
   padding-left: 0;
+}
+.logo {
+  width: 18rem;
+  height: auto;
+}
+
+.logo-position-screen {
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+  
+}
+
+@media (min-width: 768px) {
+  .logo {
+    width: 22rem;
+    height: auto;
+  }
 }
 
 .button-turnos {

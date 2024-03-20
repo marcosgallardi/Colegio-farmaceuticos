@@ -1,0 +1,21 @@
+.hero {
+  background-image: url(../../../assets/Farmacia.jpg);
+  min-height: 70rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-hero h1 {
+  color: white;
+  font-size: 4.7rem;
+  text-align: center;
+  font-weight: 400;
+}
+
+.text-hero span {
+  font-weight: 800;
+  border-bottom: 6px solid var(--secondary);
+}
