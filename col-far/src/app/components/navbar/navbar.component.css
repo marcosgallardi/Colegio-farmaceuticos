@@ -37,10 +37,6 @@
 .navbar a:first-of-type {
   padding-left: 0;
 }
-.logo {
-  width: 18rem;
-  height: auto;
-}
 
 .plus {
   display: inline;
@@ -60,23 +56,7 @@
   }
 }
 
-.button-turnos {
-  font-size: 1.4rem;
-  font-weight: 800;
-  color: white;
-  padding: 0.7rem 1.2rem;
-  background-color: var(--primary);
-  border-radius: 10rem;
-  text-transform: uppercase;
-}
 
-.button-turnos:hover {
-  background-color: #041e42d7;
-}
-
-.button-turnos span {
-  color: var(--secondary);
-}
 
 .lista-movil {
   display: flex;
