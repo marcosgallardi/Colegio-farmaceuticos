@@ -1,44 +1,77 @@
-<nav class="container flex">
-  <div class="logo">
-    <img src="../../../assets/logo.svg" alt="logo colegio farm" class="logo" />
-  </div>
-  <div class="navbar d-none d-lg-block">
-    <a href="">Institucional</a>
-    <a href="">Farmacias</a>
-    <a href="">Novedades</a>
-    <a href="">Contacto</a>
-  </div>
-  <div class="d-lg-none">
-    <button
-      class="btn"
-      type="button"
-      data-bs-toggle="offcanvas"
-      data-bs-target="#offcanvasRight"
-      aria-controls="offcanvasRight"
-    >
-      <i class="bi bi-list display-4"></i>
-    </button>
-
+<div>
+  <div class="d-lg-none turnos-movil">
     <div
-      class="offcanvas offcanvas-end w-75 bg-light show"
-      tabindex="-1"
-      id="offcanvasRight"
-      aria-labelledby="offcanvasRightLabel"
+      class="plus animate__animated animate__flash animate__infinite animate__slow"
     >
-      <div class="offcanvas-header logo-position-screen">
-        <img src="../../../assets/logo-mob-menu.svg" alt="" class="logo" />
-      </div>
-      <div class="offcanvas-body"></div>
+      ✚
     </div>
+    Farmacias de <span>&nbsp;Turno</span>
   </div>
-  <div class="turnos d-none d-lg-block">
-    <button class="button-turnos">
-      <div
-        class="plus animate__animated animate__flash animate__infinite animate__slow"
+
+  <nav class="container flex">
+    <div class="logo">
+      <img
+        src="../../../assets/logo.svg"
+        alt="logo colegio farm"
+        class="logo"
+      />
+    </div>
+    <div class="navbar d-none d-lg-block">
+      <a href="">Institucional</a>
+      <a href="">Farmacias</a>
+      <a href="">Novedades</a>
+      <a href="">Contacto</a>
+    </div>
+    <div class="d-lg-none">
+      <button
+        class="btn"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight"
       >
-        ✚
+        <i class="bi bi-list display-4"></i>
+      </button>
+
+      <div
+        class="offcanvas offcanvas-end w-75 bg-light show"
+        tabindex="-1"
+        id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel"
+      >
+        <div class="offcanvas-header logo-position-screen">
+          <img src="../../../assets/logo-mob-menu.svg" alt="" class="logo" />
+        </div>
+        <div class="offcanvas-body">
+          <ul class="lista-movil">
+            <a>
+              <i class="bi bi-chevron-right">Inicio</i>
+            </a>
+            <a>
+              <i class="bi bi-chevron-right">Institucional</i>
+            </a>
+            <a>
+              <i class="bi bi-chevron-right">Farmacias</i>
+            </a>
+            <a>
+              <i class="bi bi-chevron-right">Novedades</i>
+            </a>
+            <a>
+              <i class="bi bi-chevron-right">Contacto</i>
+            </a>
+          </ul>
+        </div>
       </div>
-      Farmacias de <span>Turno</span>
-    </button>
-  </div>
-</nav>
+    </div>
+    <div class="turnos d-none d-lg-block">
+      <button class="button-turnos">
+        <div
+          class="plus animate__animated animate__flash animate__infinite animate__slow"
+        >
+          ✚
+        </div>
+        Farmacias de <span>Turno</span>
+      </button>
+    </div>
+  </nav>
+</div>

@@ -3,7 +3,19 @@
   width: 90%;
   margin: 0 auto;
 }
+.turnos-movil {
+  background-color: var(--primary);
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  font-weight: 800;
+  text-transform: uppercase;
+}
 
+.turnos-movil span {
+  color: var(--secondary);
+}
 .flex {
   display: flex;
   justify-content: space-between;
@@ -58,10 +70,28 @@
   text-transform: uppercase;
 }
 
-.button-turnos:hover{
-  background-color:  #041e42d7;
+.button-turnos:hover {
+  background-color: #041e42d7;
 }
 
 .button-turnos span {
   color: var(--secondary);
+}
+
+.lista-movil {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
+  line-height: 2.3;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+@media (min-width: 600px) {
+  .lista-movil {
+    padding-top: 7rem;
+    padding-left: 5rem;
+    line-height: 3;
+    font-size: 2rem;
+  }
 }
