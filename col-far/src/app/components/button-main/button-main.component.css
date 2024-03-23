@@ -21,7 +21,6 @@
   height: auto;
 }
 .plus {
-    display: inline;
-    padding-right: 1rem;
-  }
-  
+  display: inline;
+  padding-right: 1rem;
+}

@@ -1,0 +1,27 @@
+section{
+    padding: 0;
+}
+
+.spaces {
+  padding: 10rem 0;
+}
+
+.nosotros {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15rem;
+}
+
+.nosotros img {
+  border-radius: 1rem;
+}
+
+.texto-nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--primary);
+}
+
+.texto-nosotros h3 {
+}

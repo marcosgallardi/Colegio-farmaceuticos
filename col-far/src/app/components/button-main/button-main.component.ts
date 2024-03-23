@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { ButtonInterface } from '../../interfaces/button-interface';
 
 @Component({
   selector: 'app-button-main',
@@ -8,5 +9,9 @@ import { Component, Input } from '@angular/core';
   styleUrl: './button-main.component.css',
 })
 export class ButtonMainComponent {
-  @Input() text: string = '';
+  @Input() text: ButtonInterface = {
+    text: 'Inicio',
+    span: 'Inicio',
+    icon: false,
+  };
 }

@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { ButtonMainComponent } from '../button-main/button-main.component';
+import { ButtonInterface } from '../../interfaces/button-interface';
+
 
 @Component({
   selector: 'app-navbar',
@@ -9,5 +11,9 @@ import { ButtonMainComponent } from '../button-main/button-main.component';
   styleUrl: './navbar.component.css',
 })
 export class NavbarComponent {
-  text: string = ``;
+  button: ButtonInterface = {
+    text: 'Farmacias de',
+    span: 'Turno',
+    icon: true,
+  };
 }

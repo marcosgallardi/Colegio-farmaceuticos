@@ -2,7 +2,8 @@
   <div
     class="plus animate__animated animate__flash animate__infinite animate__slow"
   >
-    ✚
+    @if (text.icon) { ✚ }
   </div>
-  Farmacias de <span>Turno {{text}}</span>
+  {{ text.text }}
+  <span> {{ text.span }}</span>
 </button>
