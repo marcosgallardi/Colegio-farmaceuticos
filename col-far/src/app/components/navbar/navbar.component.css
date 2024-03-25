@@ -1,6 +1,7 @@
 .container {
   max-width: 130rem;
   width: 90%;
+
   margin: 0 auto;
 }
 .turnos-movil {
@@ -38,7 +39,6 @@
   padding-left: 0;
 }
 
-
 .logo-position-screen {
   display: flex;
   justify-content: center;
@@ -51,8 +51,6 @@
     height: auto;
   }
 }
-
-
 
 .lista-movil {
   display: flex;
