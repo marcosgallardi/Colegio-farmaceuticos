@@ -1,0 +1,25 @@
+.datos-container {
+  width: 100%;
+  height: 18rem;
+  background-color: var(--secondary);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.item-dato {
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.item-dato h4 {
+  font-size: 7rem;
+  font-weight: 800;
+}
+
+.item-dato p {
+  font-weight: 600;
+
+  text-transform: uppercase;
+}
