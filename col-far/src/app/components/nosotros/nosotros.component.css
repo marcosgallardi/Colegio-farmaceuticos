@@ -36,11 +36,19 @@
   flex-direction: column;
   justify-content: center;
   color: var(--primary);
+  padding: 0 2rem;
 }
 
 .texto-nosotros h3 {
   font-weight: 700;
   font-size: 4rem;
+  padding-top:5rem ;
+}
+
+@media (min-width: 768px) { 
+ .texto-nosotros h3{
+ padding: 0;
+} 
 }
 
 .buttons-nosotros {
