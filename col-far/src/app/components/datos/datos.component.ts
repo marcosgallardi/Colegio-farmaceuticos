@@ -8,7 +8,6 @@ import { TweenMax } from 'gsap';
   templateUrl: './datos.component.html',
   styleUrl: './datos.component.css',
 })
-
 export class DatosComponent implements OnInit {
   @ViewChild('datosContainer', { static: true }) datosContainer!: ElementRef;
   isVisible: boolean = false;
@@ -16,8 +15,8 @@ export class DatosComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting) {
           this.isVisible = true;
           this.animateNumbers();
@@ -30,7 +29,8 @@ export class DatosComponent implements OnInit {
   }
 
   animateNumbers(): void {
-    const items = this.datosContainer.nativeElement.querySelectorAll('.item-dato h4');
+    const items =
+      this.datosContainer.nativeElement.querySelectorAll('.item-dato h4');
     items.forEach((item: HTMLElement, index: number) => {
       const finalValue = parseInt(item.innerText.trim(), 10);
       item.innerText = '0';
