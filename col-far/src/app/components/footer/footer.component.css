@@ -1,0 +1,52 @@
+.footer {
+  background-color: var(--primary);
+  padding: 2rem 2rem;
+  color: white;
+}
+
+.icon-footer img {
+  width: 6rem;
+}
+.icon-footer p {
+  padding-top: 2rem;
+}
+
+.icon-footer span {
+  font-weight: 700;
+}
+
+.footer-grid h3 {
+  color: var(--secondary);
+  font-size: 2.2rem;
+  padding-top: 3.3rem;
+}
+
+.info-colegio {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-colegio a {
+  font-size: 1.8rem;
+  color: white;
+  padding-bottom: 2rem;
+}
+
+.info-colegio a:nth-child(4) {
+  padding-bottom: 0;
+}
+
+.farmacias-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.farmacias-footer a {
+  font-size: 1.8rem;
+  color: white;
+  padding-bottom: 2rem;
+}
+
+.farmacias-footer a:nth-child(3) {
+  padding-bottom: 0;
+}

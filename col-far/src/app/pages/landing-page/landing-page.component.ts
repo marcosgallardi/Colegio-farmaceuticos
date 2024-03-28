@@ -7,7 +7,12 @@ import { FooterComponent } from '../../components/footer/footer.component';
 @Component({
   selector: 'app-landing-page',
   standalone: true,
-  imports: [NavbarComponent, NosotrosComponent, DatosComponent,FooterComponent],
+  imports: [
+    NavbarComponent,
+    NosotrosComponent,
+    DatosComponent,
+    FooterComponent,
+  ],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.css',
 })
