@@ -20,7 +20,13 @@
   font-size: 2.2rem;
   padding-top: 3.3rem;
 }
-
+@media (min-width: 768px) {
+  .footer-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 .info-colegio {
   display: flex;
   flex-direction: column;
@@ -49,4 +55,18 @@
 
 .farmacias-footer a:nth-child(3) {
   padding-bottom: 0;
+}
+
+.contacto-footer p {
+  font-size: 1.8rem;
+}
+
+.contacto-item {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 1.5rem;
+}
+
+.contacto-item p {
+  padding-left: 2rem;
 }
