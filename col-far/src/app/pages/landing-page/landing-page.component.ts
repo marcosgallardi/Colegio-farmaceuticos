@@ -3,6 +3,7 @@ import { NavbarComponent } from '../../components/navbar/navbar.component';
 import { NosotrosComponent } from '../../components/nosotros/nosotros.component';
 import { DatosComponent } from '../../components/datos/datos.component';
 import { FooterComponent } from '../../components/footer/footer.component';
+import { NovedadesComponent } from '../../components/novedades/novedades.component';
 
 @Component({
   selector: 'app-landing-page',
@@ -12,6 +13,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     NosotrosComponent,
     DatosComponent,
     FooterComponent,
+    NovedadesComponent,
   ],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.css',
