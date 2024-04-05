@@ -1,12 +1,14 @@
 import { Component, OnInit, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { SwiperOptions } from 'swiper/types';
-
+import { ButtonMainComponent } from '../button-main/button-main.component';
+import { ButtonInterface } from '../../interfaces/button-interface';
 
 @Component({
   selector: 'app-novedades',
   standalone: true,
   templateUrl: './novedades.component.html',
   styleUrls: ['./novedades.component.css'],
+  imports: [ButtonMainComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class NovedadesComponent implements OnInit {
@@ -31,8 +33,11 @@ export class NovedadesComponent implements OnInit {
       },
 
       // And if we need scrollbar
-      
     };
   }
- 
+  textButton: ButtonInterface = {
+    text: 'VER TODAS',
+    span: '',
+    icon: false,
+  };
 }

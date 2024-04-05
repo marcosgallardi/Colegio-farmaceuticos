@@ -5,7 +5,6 @@
 
 .novedades {
   margin: 0 auto;
- 
 }
 
 .novedades_title {
@@ -64,4 +63,11 @@
   font-weight: 800;
   font-size: 1.8rem;
   border-bottom: 1px solid var(--secondary);
+}
+
+.button-main {
+  display: flex;
+
+  justify-content: center;
+  padding-top: 4rem;
 }
