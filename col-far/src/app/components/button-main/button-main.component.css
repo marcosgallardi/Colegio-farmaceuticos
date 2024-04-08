@@ -12,6 +12,21 @@
   background-color: #041e42d7;
 }
 
+.button-turnos-true {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--primary);
+  padding: 0.7rem 1.2rem;
+  background-color: white;
+  border-radius: 10rem;
+  text-transform: uppercase;
+}
+
+.button-turnos-true:hover {
+  color: white;
+  background-color: var(--primary);
+}
+
 .button-turnos span {
   color: var(--secondary);
 }

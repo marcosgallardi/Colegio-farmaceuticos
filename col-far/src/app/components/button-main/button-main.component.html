@@ -1,9 +1,17 @@
-<button class="button-turnos">
+<button
+  [ngClass]="{
+    'button-turnos-true': text.variant,
+    'button-turnos': !text.variant
+  }"
+>
+  @if (text.icon){
   <div
     class="plus animate__animated animate__flash animate__infinite animate__slow"
   >
-    @if (text.icon) { ✚ }
+    ✚
   </div>
+  }
+
   {{ text.text }}
   <span>{{ text.span }}</span>
 </button>

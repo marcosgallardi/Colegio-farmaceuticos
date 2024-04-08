@@ -15,5 +15,6 @@ export class NosotrosComponent {
   };
   textButtons2: ButtonInterface = {
     text: 'Comisión directiva',
+    variant: true,
   };
 }
