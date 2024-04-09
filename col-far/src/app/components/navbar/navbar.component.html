@@ -10,11 +10,9 @@
 
   <nav class="container flex">
     <div class="logo">
-      <img
-        src="../../../assets/logo.svg"
-        alt="logo colegio farm"
-        class="logo"
-      />
+      @if(colegio$ | async; as resultColegios){
+      <img [src]="resultColegios.logo" alt="logo colegio farm" class="logo" />
+      }
     </div>
     <div class="navbar d-none d-lg-block">
       <a href="">Institucional</a>

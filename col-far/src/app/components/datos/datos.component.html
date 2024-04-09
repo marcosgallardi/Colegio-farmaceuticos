@@ -1,23 +1,25 @@
 <div class="datos-container" #datosContainer>
+  @if(colegio$ | async; as resultColegios){
   <div class="item-dato">
     <div class="numero-datos">
       <h3>+</h3>
-      <h4>20</h4>
+      <h4>{{ resultColegios.cantFarm }}</h4>
     </div>
     <p>Farmacias</p>
   </div>
   <div class="item-dato">
     <div class="numero-datos">
       <h3>+</h3>
-      <h4>50</h4>
+      <h4>{{ resultColegios.cantProf }}</h4>
     </div>
     <p>Profesionales adheridos</p>
   </div>
   <div class="item-dato">
     <div class="numero-datos">
       <h3>+</h3>
-      <h4>70000</h4>
+      <h4>{{ resultColegios.cantHab }}</h4>
     </div>
     <p>Habitantes</p>
   </div>
+  }
 </div>

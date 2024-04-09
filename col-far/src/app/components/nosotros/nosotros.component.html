@@ -1,8 +1,9 @@
 <section class="container spaces">
+  @if(colegio$ | async; as resultColegios){
   <div class="nosotros">
     <div class="img-col">
       <img
-        src="../../../assets/home-el-colegio.jpg"
+        [src]="resultColegios.nosotrosImg"
         alt="colegio-foto"
         width="800"
         height="600"
@@ -11,11 +12,7 @@
     <div class="texto-nosotros">
       <h3>El Colegio</h3>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium,
-        reprehenderit ex? Beatae odit saepe vitae quod. Amet aliquid, at
-        debitis, dignissimos alias itaque assumenda molestiae laudantium quaerat
-        iusto eos id? debitis, dignissimos alias itaque assumenda molestiae
-        laudantium quaerat iusto eos id?
+        {{ resultColegios.nosotros }}
       </p>
       <div class="buttons-nosotros">
         <app-button-main [text]="textButtons1" />
@@ -25,4 +22,5 @@
       </div>
     </div>
   </div>
+  }
 </section>

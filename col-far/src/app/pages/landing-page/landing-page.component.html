@@ -7,7 +7,9 @@
       <h1>
         COLEGIO DE FARMACÉUTICOS <br />
         DE LA PROVINCIA DE BUENOS AIRES <br />
-        <span>{{ colegio }}</span>
+        @if(colegio$ | async; as resultColegios){
+        <span>{{ resultColegios.ciudad }}</span>
+        }
       </h1>
     </div>
   </div>

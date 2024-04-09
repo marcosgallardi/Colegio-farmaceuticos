@@ -6,6 +6,9 @@ import { FooterComponent } from '../../components/footer/footer.component';
 import { NovedadesComponent } from '../../components/novedades/novedades.component';
 
 import { ColegiosService } from '../../core/colegios.service';
+import { Observable } from 'rxjs';
+import { Colegios } from '../../interfaces/colegios-interface';
+import { AsyncPipe } from '@angular/common';
 
 @Component({
   selector: 'app-landing-page',
@@ -16,17 +19,16 @@ import { ColegiosService } from '../../core/colegios.service';
     DatosComponent,
     FooterComponent,
     NovedadesComponent,
+    AsyncPipe,
   ],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.css',
 })
 export class LandingPageComponent implements OnInit {
+  public colegio$!: Observable<Colegios>;
   constructor(private service: ColegiosService) {}
 
-  colegioService: ColegiosService = inject(ColegiosService);
-
-  colegio = this.colegioService.getColegios();
   ngOnInit(): void {
-    
+    this.colegio$ = this.service.getColegios();
   }
 }

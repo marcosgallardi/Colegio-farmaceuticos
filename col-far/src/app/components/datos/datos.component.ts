@@ -1,10 +1,14 @@
 import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 import { TweenMax } from 'gsap';
+import { Observable } from 'rxjs';
+import { Colegios } from '../../interfaces/colegios-interface';
+import { ColegiosService } from '../../core/colegios.service';
+import { AsyncPipe } from '@angular/common';
 
 @Component({
   selector: 'app-datos',
   standalone: true,
-  imports: [],
+  imports: [AsyncPipe],
   templateUrl: './datos.component.html',
   styleUrl: './datos.component.css',
 })
@@ -12,7 +16,8 @@ export class DatosComponent implements OnInit {
   @ViewChild('datosContainer', { static: true }) datosContainer!: ElementRef;
   isVisible: boolean = false;
 
-  constructor() {}
+  public colegio$!: Observable<Colegios>;
+  constructor(private service: ColegiosService) {}
 
   ngOnInit(): void {
     const observer = new IntersectionObserver((entries) => {
@@ -26,6 +31,7 @@ export class DatosComponent implements OnInit {
     });
 
     observer.observe(this.datosContainer.nativeElement);
+    this.colegio$ = this.service.getColegios();
   }
 
   animateNumbers(): void {
