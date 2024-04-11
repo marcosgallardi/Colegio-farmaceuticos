@@ -10,6 +10,6 @@ import { Novedades } from '../interfaces/novedades-interface';
 export class NovedadesService {
   constructor(private http: HttpClient) {}
   getNovedades(): Observable<Novedades> {
-   return this.http.get<Novedades>(`${server1}/0`);
+    return this.http.get<Novedades>(`${server1}/0`);
   }
 }

@@ -2,6 +2,9 @@ import { Component, OnInit, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { SwiperOptions } from 'swiper/types';
 import { ButtonMainComponent } from '../button-main/button-main.component';
 import { ButtonInterface } from '../../interfaces/button-interface';
+import { NovedadesService } from '../../core/novedades.service';
+import { Observable } from 'rxjs';
+import { Novedades } from '../../interfaces/novedades-interface';
 
 @Component({
   selector: 'app-novedades',
@@ -12,16 +15,15 @@ import { ButtonInterface } from '../../interfaces/button-interface';
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class NovedadesComponent implements OnInit {
-  config: SwiperOptions = {}; // Objeto de configuración para Swiper
+  config: SwiperOptions = {};
+  public novedades$!: Observable<Novedades>;
+  constructor(private service: NovedadesService) {}
 
-  constructor() {}
-
-  ngOnInit() {
+  ngOnInit(): void {
     this.config = {
       direction: 'vertical',
       loop: true,
 
-      // If we need pagination
       pagination: {
         el: '.swiper-pagination',
       },
@@ -34,6 +36,11 @@ export class NovedadesComponent implements OnInit {
 
       // And if we need scrollbar
     };
+    this.novedades$ = this.service.getNovedades();
+
+    this.novedades$.subscribe((resp: Novedades) => {
+     return resp
+    });
   }
   textButton: ButtonInterface = {
     text: 'VER TODAS',

@@ -1,6 +1,36 @@
-[{
+[{   "id":1,
+    "imgNov":"../../assets/novedad.jpg",
+    "fecha":"9/04/2024",
+    "titulo":"Lorem Ipsum es simplemente el texto de relleno de las imprentas y",
+    "subtitulo":"Lorem Ipsum es simplemente el texto de relleno de las imprentas y",
+    "descripcion":"Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen."
+},{   "id":2,
     "imgNov":"../../assets/novedad.jpg",
     "fecha":"10/04/2024",
+    "titulo":"Lorem Ipsum es simplemente el texto de relleno de las imprentas y",
+    "subtitulo":"Lorem Ipsum es simplemente el texto de relleno de las imprentas y",
+    "descripcion":"Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen."
+},{   "id":3,
+    "imgNov":"../../assets/novedad.jpg",
+    "fecha":"11/04/2024",
+    "titulo":"Lorem Ipsum es simplemente el texto de relleno de las imprentas y",
+    "subtitulo":"Lorem Ipsum es simplemente el texto de relleno de las imprentas y",
+    "descripcion":"Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen."
+},{   "id":4,
+    "imgNov":"../../assets/novedad.jpg",
+    "fecha":"12/04/2024",
+    "titulo":"Lorem Ipsum es simplemente el texto de relleno de las imprentas y",
+    "subtitulo":"Lorem Ipsum es simplemente el texto de relleno de las imprentas y",
+    "descripcion":"Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen."
+},{   "id":5,
+    "imgNov":"../../assets/novedad.jpg",
+    "fecha":"13/04/2024",
+    "titulo":"Lorem Ipsum es simplemente el texto de relleno de las imprentas y",
+    "subtitulo":"Lorem Ipsum es simplemente el texto de relleno de las imprentas y",
+    "descripcion":"Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen."
+},{   "id":6,
+    "imgNov":"../../assets/novedad.jpg",
+    "fecha":"14/04/2024",
     "titulo":"Lorem Ipsum es simplemente el texto de relleno de las imprentas y",
     "subtitulo":"Lorem Ipsum es simplemente el texto de relleno de las imprentas y",
     "descripcion":"Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen."

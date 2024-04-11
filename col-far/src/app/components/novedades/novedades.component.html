@@ -7,7 +7,10 @@
       <swiper-container navigation="true" pagination="true">
         <swiper-slide>
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
+            @for (item of novedades$; track novedades$.id) { 
+
+            }
+            <!-- <div class="swiper-slide">
               <img
                 src="../../../assets/novedad.jpg"
                 alt=""
@@ -66,7 +69,7 @@
                 </h5>
                 <p class="boton_mas">LEER MÁS</p>
               </div>
-            </div>
+            </div> -->
           </div>
         </swiper-slide>
 
