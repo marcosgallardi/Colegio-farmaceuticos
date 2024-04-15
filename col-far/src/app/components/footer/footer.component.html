@@ -28,17 +28,26 @@
         <div class="contacto-item">
           <i class="bi bi-geo-alt"> </i>
           <p>
-            Calle 15 N° 658. <br />
-            Mercedes, Bs. As, Argentina.
+            @if(colegios$ | async; as resultColegios){
+            {{ resultColegios.direccion }}
+            }
           </p>
         </div>
         <div class="contacto-item">
           <i class="bi bi-telephone"></i>
-          <p>2324502670</p>
+          <p>
+            @if(colegios$ | async; as resultColegios){
+            {{ resultColegios.telefono }}
+            }
+          </p>
         </div>
         <div class="contacto-item">
           <i class="bi bi-envelope"></i>
-          <p>contactocofamer.com.ar</p>
+          <p>
+            @if(colegios$ | async; as resultColegios){
+              {{ resultColegios.email }}
+              }
+          </p>
         </div>
       </div>
     </div>
