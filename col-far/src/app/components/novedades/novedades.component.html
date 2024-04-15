@@ -7,134 +7,43 @@
       <swiper-container navigation="true" pagination="true">
         <swiper-slide>
           <div class="swiper-wrapper">
-            @for (item of novedades$; track novedades$.id) { 
-
+            @for (item of novedadesList; track item.id) {
+            <div class="swiper-slide">
+              <img [src]="item.imgNov" alt="" class="img-novedades" />
+              <div class="novedad_slide">
+                <p class="fecha_card">{{ item.fecha }}</p>
+                <h4>
+                  {{ item.titulo }}
+                  <br />y archivos de texto.
+                </h4>
+                <h5>
+                  {{ item.subtitulo }}
+                </h5>
+                <p class="boton_mas">LEER MÁS</p>
+              </div>
+            </div>
             }
-            <!-- <div class="swiper-slide">
-              <img
-                src="../../../assets/novedad.jpg"
-                alt=""
-                class="img-novedades"
-              />
-              <div class="novedad_slide">
-                <p class="fecha_card">03 abril, 2024</p>
-                <h4>
-                  Lorem Ipsum es simplemente el texto de relleno de las
-                  imprentas
-                  <br />y archivos de texto.
-                </h4>
-                <h5>
-                  Lorem Ipsum es simplemente el texto de relleno de las
-                  imprentas y archivos de te
-                </h5>
-                <p class="boton_mas">LEER MÁS</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="../../../assets/novedad.jpg"
-                alt=""
-                class="img-novedades"
-              />
-              <div class="novedad_slide">
-                <p class="fecha_card">03 abril, 2024</p>
-                <h4>
-                  Lorem Ipsum es simplemente el texto de relleno de las
-                  imprentas
-                  <br />y archivos de texto.
-                </h4>
-                <h5>
-                  Lorem Ipsum es simplemente el texto de relleno de las
-                  imprentas y archivos de te
-                </h5>
-                <p class="boton_mas">LEER MÁS</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="../../../assets/novedad.jpg"
-                alt=""
-                class="img-novedades"
-              />
-              <div class="novedad_slide">
-                <p class="fecha_card">03 abril, 2024</p>
-                <h4>
-                  Lorem Ipsum es simplemente el texto de relleno de las
-                  imprentas
-                  <br />y archivos de texto.
-                </h4>
-                <h5>
-                  Lorem Ipsum es simplemente el texto de relleno de las
-                  imprentas y archivos de te
-                </h5>
-                <p class="boton_mas">LEER MÁS</p>
-              </div>
-            </div> -->
           </div>
         </swiper-slide>
 
         <swiper-slide>
           <div class="swiper-wrapper">
+            @for (item of novedadesList; track item.id) {
             <div class="swiper-slide">
-              <img
-                src="../../../assets/novedad.jpg"
-                alt=""
-                class="img-novedades"
-              />
+              <img [src]="item.imgNov" alt="" class="img-novedades" />
               <div class="novedad_slide">
-                <p class="fecha_card">03 abril, 2024</p>
+                <p class="fecha_card">{{ item.fecha }}</p>
                 <h4>
-                  Lorem Ipsum es simplemente el texto de relleno de las
-                  imprentas
+                  {{ item.titulo }}
                   <br />y archivos de texto.
                 </h4>
                 <h5>
-                  Lorem Ipsum es simplemente el texto de relleno de las
-                  imprentas y archivos de te
+                  {{ item.subtitulo }}
                 </h5>
                 <p class="boton_mas">LEER MÁS</p>
               </div>
             </div>
-            <div class="swiper-slide">
-              <img
-                src="../../../assets/novedad.jpg"
-                alt=""
-                class="img-novedades"
-              />
-              <div class="novedad_slide">
-                <p class="fecha_card">03 abril, 2024</p>
-                <h4>
-                  Lorem Ipsum es simplemente el texto de relleno de las
-                  imprentas
-                  <br />y archivos de texto.
-                </h4>
-                <h5>
-                  Lorem Ipsum es simplemente el texto de relleno de las
-                  imprentas y archivos de te
-                </h5>
-                <p class="boton_mas">LEER MÁS</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="../../../assets/novedad.jpg"
-                alt=""
-                class="img-novedades"
-              />
-              <div class="novedad_slide">
-                <p class="fecha_card">03 abril, 2024</p>
-                <h4>
-                  Lorem Ipsum es simplemente el texto de relleno de las
-                  imprentas
-                  <br />y archivos de texto.
-                </h4>
-                <h5>
-                  Lorem Ipsum es simplemente el texto de relleno de las
-                  imprentas y archivos de te
-                </h5>
-                <p class="boton_mas">LEER MÁS</p>
-              </div>
-            </div>
+            }
           </div>
         </swiper-slide>
       </swiper-container>

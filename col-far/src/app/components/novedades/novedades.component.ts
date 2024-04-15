@@ -1,4 +1,9 @@
-import { Component, OnInit, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  CUSTOM_ELEMENTS_SCHEMA,
+  inject,
+} from '@angular/core';
 import { SwiperOptions } from 'swiper/types';
 import { ButtonMainComponent } from '../button-main/button-main.component';
 import { ButtonInterface } from '../../interfaces/button-interface';
@@ -12,12 +17,53 @@ import { Novedades } from '../../interfaces/novedades-interface';
   templateUrl: './novedades.component.html',
   styleUrls: ['./novedades.component.css'],
   imports: [ButtonMainComponent],
+  providers: [NovedadesService],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class NovedadesComponent implements OnInit {
   config: SwiperOptions = {};
-  public novedades$!: Observable<Novedades>;
-  constructor(private service: NovedadesService) {}
+  novedadesList: Novedades[] = [
+    {
+      id: 1,
+      imgNov: '../../assets/novedad.jpg',
+      fecha: '9/04/2024',
+      titulo:
+        'Lorem Ipsum es simplemente el texto de relleno de las imprentas y',
+      subtitulo:
+        'Lorem Ipsum es simplemente el texto de relleno de las imprentas y',
+      descripcion:
+        'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.',
+    },
+    {
+      id: 2,
+      imgNov: '../../assets/novedad.jpg',
+      fecha: '10/04/2024',
+      titulo:
+        'Lorem Ipsum es simplemente el texto de relleno de las imprentas y',
+      subtitulo:
+        'Lorem Ipsum es simplemente el texto de relleno de las imprentas y',
+      descripcion:
+        'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.',
+    },
+    {
+      id: 3,
+      imgNov: '../../assets/novedad.jpg',
+      fecha: '11/04/2024',
+      titulo:
+        'Lorem Ipsum es simplemente el texto de relleno de las imprentas y',
+      subtitulo:
+        'Lorem Ipsum es simplemente el texto de relleno de las imprentas y',
+      descripcion:
+        'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.',
+    },
+  ];
+  // novedadesList: Novedades[] = [];
+  // novedadesService: NovedadesService = inject(NovedadesService);
+  // constructor() {
+  //   this.novedadesService.getNovedades().then((novedadesList: Novedades[]) => {
+  //     this.novedadesList = novedadesList;
+  //   });
+  // }
 
   ngOnInit(): void {
     this.config = {
@@ -36,11 +82,6 @@ export class NovedadesComponent implements OnInit {
 
       // And if we need scrollbar
     };
-    this.novedades$ = this.service.getNovedades();
-
-    this.novedades$.subscribe((resp: Novedades) => {
-     return resp
-    });
   }
   textButton: ButtonInterface = {
     text: 'VER TODAS',

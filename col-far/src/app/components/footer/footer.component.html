@@ -6,7 +6,10 @@
         <p>
           Colegio de Farmacéuticos <br />
           de la Provincia de Buenos Aires <br />
-          <span>Delegación Mercedes</span>
+          @if(colegios$ | async; as resultColegios){
+
+          <span>Delegación {{ resultColegios.ciudad }}</span>
+          }
         </p>
       </div>
       <div class="info-colegio">

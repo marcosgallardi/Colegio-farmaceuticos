@@ -8,8 +8,10 @@ import { Novedades } from '../interfaces/novedades-interface';
   providedIn: 'root',
 })
 export class NovedadesService {
-  constructor(private http: HttpClient) {}
-  getNovedades(): Observable<Novedades> {
-    return this.http.get<Novedades>(`${server1}/0`);
+  constructor() {}
+  async getNovedades(): Promise<Novedades[]> {
+    const data = await fetch(`${server1}/0`);
+    console.log(data);
+    return (await data.json()) ?? [];
   }
 }
