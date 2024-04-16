@@ -5,11 +5,12 @@ import { Colegios } from '../../interfaces/colegios-interface';
 import { ColegiosService } from '../../core/colegios.service';
 import { Observable } from 'rxjs';
 import { AsyncPipe } from '@angular/common';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [ButtonMainComponent, AsyncPipe],
+  imports: [ButtonMainComponent, AsyncPipe, RouterLink, RouterOutlet],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css',
 })
