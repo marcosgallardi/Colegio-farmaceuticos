@@ -1,0 +1,41 @@
+.swiper {
+  padding: 3rem 0;
+}
+
+.swiper-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4rem;
+}
+
+.swiper-container {
+  margin: 0 auto;
+}
+
+.swiper-slide {
+  width: 30rem;
+  display: grid;
+  grid-template-rows: 30rem 5rem;
+  background-color: white;
+}
+
+.img-novedades {
+  width: 40rem;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.swiper-space {
+  padding-right: 6rem;
+}
+
+.title-swiper {
+  padding: 1rem 0 2rem 2rem;
+}
+
+.name-swiper {
+  color: var(--primary);
+  padding: 2.5rem 0 0 2rem;
+  font-weight: 700;
+  font-size: 1.6rem;
+}

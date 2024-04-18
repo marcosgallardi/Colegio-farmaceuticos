@@ -1,0 +1,33 @@
+<section class="container">
+  <div class="swiper">
+    <swiper-container
+      navigation="true"
+      pagination="true"
+      class="swiper-container"
+    >
+      <swiper-slide class="swiper-space">
+        <div class="swiper-wrapper">
+          @for (item of comisionList; track item.title) {
+          <div class="swiper-slide">
+            <img [src]="item.image" alt="" class="img-novedades" />
+            <h1 class="name-swiper">{{ item.name }}</h1>
+            <p class="title-swiper">{{ item.title }}</p>
+          </div>
+          }
+        </div>
+      </swiper-slide>
+
+      <swiper-slide>
+        <div class="swiper-wrapper">
+          @for (item of comisionList; track item.title) {
+          <div class="swiper-slide">
+            <img [src]="item.image" alt="" class="img-novedades" />
+            <h1 class="name-swiper">{{ item.name }}</h1>
+            <p class="title-swiper">{{ item.title }}</p>
+          </div>
+          }
+        </div>
+      </swiper-slide>
+    </swiper-container>
+  </div>
+</section>

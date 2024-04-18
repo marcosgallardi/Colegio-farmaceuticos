@@ -21,6 +21,7 @@
   background-color: rgba(114, 114, 114, 0.151);
   padding: 7rem 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
