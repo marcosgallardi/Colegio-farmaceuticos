@@ -3,8 +3,9 @@
     <div class="input-farm">
       <input
         type="text"
-        class="form-control border-0 shadow-sm"
+        class="form-control border-0 shadow-sm input-table"
         placeholder="Buscar ..."
+        (input)="filterFarmacia($event.target)"
       />
     </div>
   </div>
@@ -22,12 +23,13 @@
             </tr>
           </thead>
           <tbody class="table-body">
+            @for (farmacia of farmacias; track farmacia.id) {
             <tr>
-              <td>Gonzales</td>
-              <td>Mercedes</td>
-              <td>Calle 24 N° 658</td>
-              <td>(02324) 461486</td>
-              <td>2324502670</td>
+              <td>{{ farmacia.nombre }}</td>
+              <td>{{ farmacia.localidad }}</td>
+              <td>{{ farmacia.direccion }}</td>
+              <td>({{ farmacia.caracteristica }}){{ farmacia.telefono }}</td>
+              <td>{{ farmacia.caracteristica }}{{ farmacia.whatsapp }}</td>
               <td>
                 <div class="btn-group">
                   <a href="" class="btn color-btn-primary"
@@ -42,26 +44,7 @@
                 </div>
               </td>
             </tr>
-            <tr>
-              <td>Gonzales</td>
-              <td>Mercedes</td>
-              <td>Calle 24 N° 658</td>
-              <td>(02324) 461486</td>
-              <td>2324502670</td>
-              <td>
-                <div class="btn-group">
-                  <a href="" class="btn p-3 btn-dark"
-                    ><i class="bi bi-geo-alt icon-size"></i
-                  ></a>
-                  <a href="" class="btn p-3 btn-dark"
-                    ><i class="bi bi-telephone"></i
-                  ></a>
-                  <a href="" class="btn p-3 btn-primary"
-                    ><i class="bi bi-whatsapp"></i
-                  ></a>
-                </div>
-              </td>
-            </tr>
+            }
           </tbody>
         </table>
       </div>

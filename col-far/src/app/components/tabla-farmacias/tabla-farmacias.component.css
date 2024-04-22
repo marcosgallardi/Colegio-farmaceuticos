@@ -15,6 +15,7 @@
 
 .table-body tr {
   height: 5.5rem;
+  text-transform: capitalize;
 }
 
 .icon-size {
@@ -47,4 +48,10 @@
 
 .color-btn-secondary:hover {
   background-color: rgba(34, 197, 94, 0.712);
+}
+
+.input-table {
+  width: 20rem;
+  height: 3.5rem;
+  font-size: 1.8rem;
 }
