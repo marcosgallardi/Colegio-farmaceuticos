@@ -2,6 +2,8 @@ import { Routes } from '@angular/router';
 import { InstitucionalPageComponent } from './pages/institucional-page/institucional-page/institucional-page.component';
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 import { FarmaciasPageComponent } from './pages/farmacias-page/farmacias-page.component';
+import { NovedadesPageComponent } from './pages/novedades-page/novedades-page/novedades-page.component';
+import { ContactoPageComponent } from './pages/contacto-page/contacto-page/contacto-page.component';
 
 export const routes: Routes = [
   {
@@ -16,5 +18,13 @@ export const routes: Routes = [
   {
     path: 'farmacias',
     component: FarmaciasPageComponent,
+  },
+  {
+    path: 'novedades',
+    component: NovedadesPageComponent,
+  },
+  {
+    path: 'contacto',
+    component: ContactoPageComponent,
   },
 ];

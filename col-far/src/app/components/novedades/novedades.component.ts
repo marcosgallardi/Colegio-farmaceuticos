@@ -3,6 +3,7 @@ import {
   OnInit,
   CUSTOM_ELEMENTS_SCHEMA,
   inject,
+  Input,
 } from '@angular/core';
 import { SwiperOptions } from 'swiper/types';
 import { ButtonMainComponent } from '../button-main/button-main.component';
@@ -21,6 +22,8 @@ import { Novedades } from '../../interfaces/novedades-interface';
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class NovedadesComponent implements OnInit {
+  @Input() showTitle: boolean = true;
+
   config: SwiperOptions = {};
   novedadesList: Novedades[] = [
     {
