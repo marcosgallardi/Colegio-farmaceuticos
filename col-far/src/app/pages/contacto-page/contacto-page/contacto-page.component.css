@@ -1,15 +1,52 @@
 .spacing {
-    padding-top: 15rem;
+  padding-top: 15rem;
+}
+
+@media (min-width: 1200px) {
+  .spacing {
+    padding-top: 25rem;
   }
-  
-  @media (min-width: 1200px) {
-    .spacing {
-      padding-top: 25rem;
-    }
+}
+
+@media (min-width: 992px) {
+  .spacing {
+    padding-top: 8rem;
   }
-  
-  @media (min-width: 992px) {
-    .spacing {
-      padding-top: 8rem;
-    }
-  }
+}
+
+.contactos-grid {
+  padding: 10rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+  align-items: center;
+}
+
+.mapa-contacto img {
+  width: 650px;
+  height: auto;
+
+  border-radius: 0.9rem;
+}
+
+.contacto-info {
+  padding-left: 7rem;
+}
+
+.contacto-info li {
+  list-style-type: none;
+  display: flex;
+  padding-left: 3rem;
+  align-items: center;
+ 
+}
+.contacto-info li i {
+  font-size: 2rem;
+}
+.contacto-info li p {
+  padding-left: 2.2rem;
+}
+
+.contacto-info li a {
+  padding-left: 2rem;
+}
