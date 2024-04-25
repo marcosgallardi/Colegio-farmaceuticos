@@ -15,13 +15,19 @@
 }
 
 .contactos-grid {
-  padding: 10rem 0;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 5rem;
-  align-items: center;
+  grid-template-rows: repeat(2, 1fr);
+  padding: 5rem 0;
 }
-
+@media (min-width: 768px) {
+  .contactos-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: none;
+    padding: 10rem 0;
+    gap: 5rem;
+    align-items: center;
+  }
+}
 .mapa-contacto img {
   width: 650px;
   height: auto;
@@ -29,8 +35,10 @@
   border-radius: 0.9rem;
 }
 
-.contacto-info {
-  padding-left: 7rem;
+@media (min-width: 768px) {
+  .contacto-info {
+    padding-left: 7rem;
+  }
 }
 
 .contacto-info li {
@@ -38,7 +46,6 @@
   display: flex;
   padding-left: 3rem;
   align-items: center;
- 
 }
 .contacto-info li i {
   font-size: 2rem;
