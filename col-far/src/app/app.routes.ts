@@ -5,6 +5,7 @@ import { FarmaciasPageComponent } from './pages/farmacias-page/farmacias-page.co
 import { NovedadesPageComponent } from './pages/novedades-page/novedades-page/novedades-page.component';
 import { ContactoPageComponent } from './pages/contacto-page/contacto-page/contacto-page.component';
 import { FarmTurnosPagesComponent } from './pages/farm-turnos-pages/farm-turnos-pages/farm-turnos-pages.component';
+import { NovDetailComponent } from './components/nov-detail/nov-detail.component';
 
 export const routes: Routes = [
   {
@@ -31,5 +32,9 @@ export const routes: Routes = [
   {
     path: 'farmacias-turno',
     component: FarmTurnosPagesComponent,
+  },
+  {
+    path: 'novedades/:id',
+    component: NovDetailComponent,
   },
 ];

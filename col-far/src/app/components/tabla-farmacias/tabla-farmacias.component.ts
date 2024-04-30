@@ -43,7 +43,7 @@ export class TablaFarmaciasComponent {
     {
       id: 4,
       nombre: 'Gonzales',
-      localidad: 'mercedes',
+      localidad: 'gowland',
       direccion: 'calle 24 N° 658',
       email: 'XXXXXXXXXXXXXXXXXX',
       caracteristica: 2324,
@@ -53,7 +53,7 @@ export class TablaFarmaciasComponent {
     {
       id: 5,
       nombre: 'Gonzales',
-      localidad: 'mercedes',
+      localidad: 'gowland',
       direccion: 'calle 24 N° 658',
       email: 'XXXXXXXXXXXXXXXXXX',
       caracteristica: 2324,

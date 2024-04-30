@@ -11,13 +11,14 @@ import { ButtonInterface } from '../../interfaces/button-interface';
 import { NovedadesService } from '../../core/novedades.service';
 import { Observable } from 'rxjs';
 import { Novedades } from '../../interfaces/novedades-interface';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-novedades',
   standalone: true,
   templateUrl: './novedades.component.html',
   styleUrls: ['./novedades.component.css'],
-  imports: [ButtonMainComponent],
+  imports: [ButtonMainComponent, RouterLink],
   providers: [NovedadesService],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
