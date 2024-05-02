@@ -1,0 +1,16 @@
+.spacing {
+    padding-top: 15rem;
+  }
+  
+  @media (min-width: 1200px) {
+    .spacing {
+      padding-top: 25rem;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .spacing {
+      padding-top: 8rem;
+    }
+  }
+  

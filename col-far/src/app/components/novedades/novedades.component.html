@@ -22,7 +22,9 @@
                 <h5>
                   {{ item.subtitulo }}
                 </h5>
-                <a class="boton_mas">LEER MÁS</a>
+                <a routerLink="novedadesDetail/{{ item.id }}" class="boton_mas"
+                  >LEER MÁS</a
+                >
               </div>
             </div>
             }
@@ -43,7 +45,9 @@
                 <h5>
                   {{ item.subtitulo }}
                 </h5>
-                <a routerLink="/novedades/{{item.id}}" class="boton_mas">LEER MÁS</a>
+                <a routerLink="/novedadesDetail/{{ item.id }}" class="boton_mas"
+                  >LEER MÁS</a
+                >
               </div>
             </div>
             }
