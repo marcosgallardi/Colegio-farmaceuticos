@@ -1,16 +1,51 @@
 .spacing {
-    padding-top: 15rem;
+  padding-top: 15rem;
+}
+
+@media (min-width: 1200px) {
+  .spacing {
+    padding-top: 25rem;
   }
-  
-  @media (min-width: 1200px) {
-    .spacing {
-      padding-top: 25rem;
-    }
+}
+
+@media (min-width: 992px) {
+  .spacing {
+    padding-top: 8rem;
   }
-  
-  @media (min-width: 992px) {
-    .spacing {
-      padding-top: 8rem;
-    }
+}
+
+.banner-nov-detail {
+  width: 100%;
+  padding: 0 5rem;
+  background-color: var(--primary);
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .banner-nov-detail {
+    padding: 6rem 0;
   }
-  
+}
+
+.button-volver {
+  color: var(--secondary);
+  font-weight: 700;
+}
+
+.title-banner {
+  color: white;
+  font-size: 4rem;
+  font-weight: 700;
+}
+.fecha-novedad {
+  color: rgb(211, 210, 210);
+}
+
+.container-custom {
+  max-width: 55%;
+  width: 1200rem;
+  margin: 0 auto;
+}
