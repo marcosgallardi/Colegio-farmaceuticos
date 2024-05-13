@@ -37,4 +37,5 @@ export const routes: Routes = [
     path: 'novedadesDetail/:id',
     component: NovDetailPageComponent,
   },
+  { path: 'novedades/novedadesDetail/:id', component: NovDetailPageComponent },
 ];

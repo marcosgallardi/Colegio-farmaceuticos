@@ -33,6 +33,7 @@
 .button-volver {
   color: var(--secondary);
   font-weight: 700;
+  cursor: pointer;
 }
 
 .title-banner {

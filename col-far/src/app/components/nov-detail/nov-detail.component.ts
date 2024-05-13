@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterLink, RouterModule } from '@angular/router';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { HistorialNavService } from '../../core/historialNav/historial-nav.service';
 
 @Component({
@@ -7,18 +7,29 @@ import { HistorialNavService } from '../../core/historialNav/historial-nav.servi
   standalone: true,
   imports: [RouterLink],
   templateUrl: './nov-detail.component.html',
-  styleUrl: './nov-detail.component.css',
+  styleUrls: ['./nov-detail.component.css'],
 })
 export class NovDetailComponent implements OnInit {
-  router = RouterModule;
-  constructor(private HistorialNavService: HistorialNavService) {}
-  ngOnInit(): void {
-    this.HistorialNavService.agregarPagina(this.router.url);
+  parametro: string = '';
+  novDetailData: any = {};
+
+  constructor(
+    private router: Router,
+    private activatedRouter: ActivatedRoute,
+    private HistorialNavService: HistorialNavService
+  ) {
+    let id: string = '';
+    activatedRouter.params.subscribe(({ id: idData }) => {
+      id = idData;
+    });
+    this.parametro = id;
+    /* this.parametro =decodeURI(id);*/
   }
-  volverAnterior() {
-    const urlAnterior = this.HistorialNavService.obtenerAnterior();
-    if (urlAnterior) {
-      this.router.navigateByUrl(urlAnterior);
-    }
+
+  ngOnInit(): void {}
+
+  volverAtras() {
+    this.router.navigate(['/novedades']);
+    console.log(this.router);
   }
 }
