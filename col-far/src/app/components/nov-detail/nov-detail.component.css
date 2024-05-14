@@ -20,7 +20,7 @@
   background-color: var(--primary);
   display: flex;
   flex-direction: column;
-
+  padding: 3rem 0;
   justify-content: center;
 }
 
@@ -38,15 +38,69 @@
 
 .title-banner {
   color: white;
-  font-size: 4rem;
+  padding-top: 2rem;
   font-weight: 700;
+  font-size: 3rem;
+  text-align: start;
+}
+@media (min-width: 768px) {
+  .title-banner {
+    padding: 0;
+    font-size: 4rem;
+  }
 }
 .fecha-novedad {
   color: rgb(211, 210, 210);
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
 }
-
+@media (min-width: 768px) {
+  .fecha-novedad {
+    padding: 0;
+  }
+}
 .container-custom {
-  max-width: 55%;
+  max-width: 85%;
   width: 1200rem;
   margin: 0 auto;
+}
+
+@media (min-width: 1000px) {
+  .container-custom {
+    max-width: 55%;
+  }
+}
+
+.title-nov-detail {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  font-size: 2.1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+@media (min-width: 768px) {
+  .title-nov-detail {
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+  }
+}
+
+
+.img-nov-detail {
+    border-radius: 1rem;
+  }
+
+.desc-nov-detail {
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+}
+
+
+@media (min-width: 768px) {
+  .desc-nov-detail {
+    margin-top: 5rem;
+    padding-bottom: 10rem;
+  }
 }
