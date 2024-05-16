@@ -58,6 +58,11 @@
   line-height: 2.3;
   font-size: 1.6rem;
   font-weight: 700;
+
+  
+}
+.lista-movil a{
+  color: var(--primary);
 }
 
 @media (min-width: 600px) {
