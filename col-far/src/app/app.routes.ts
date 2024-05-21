@@ -6,6 +6,7 @@ import { NovedadesPageComponent } from './pages/novedades-page/novedades-page/no
 import { ContactoPageComponent } from './pages/contacto-page/contacto-page/contacto-page.component';
 import { FarmTurnosPagesComponent } from './pages/farm-turnos-pages/farm-turnos-pages/farm-turnos-pages.component';
 import { NovDetailPageComponent } from './pages/nov-detail-page/nov-detail-page.component';
+import { LoginPageComponent } from './pages/login-page/login-page/login-page.component';
 
 export const routes: Routes = [
   {
@@ -38,4 +39,8 @@ export const routes: Routes = [
     component: NovDetailPageComponent,
   },
   { path: 'novedades/novedadesDetail/:id', component: NovDetailPageComponent },
+  {
+    path: 'login',
+    component: LoginPageComponent,
+  },
 ];

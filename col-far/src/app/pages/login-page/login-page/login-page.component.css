@@ -1,0 +1,24 @@
+
+
+.position-button {
+  margin-top: 5rem;
+  margin-left: 5rem;
+  display: flex;
+}
+
+.button-volver {
+  color: var(--secondary);
+  font-weight: 700;
+  font-size: 2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.button-volver p {
+  margin: 0;
+}
+
+.button-volver:hover {
+  filter: drop-shadow(2px 2px 1px rgba(34, 197, 94, 0.609));
+}

@@ -13,11 +13,11 @@ import { BannerTitleComponent } from '../../../components/banner-title/banner-ti
     NosotrosComponent,
     FooterComponent,
     ComisionDirectivaComponent,
-    BannerTitleComponent
+    BannerTitleComponent,
+    NavbarComponent,
+    FooterComponent,
   ],
   templateUrl: './institucional-page.component.html',
   styleUrl: './institucional-page.component.css',
 })
-export class InstitucionalPageComponent {
-  
-}
+export class InstitucionalPageComponent {}
