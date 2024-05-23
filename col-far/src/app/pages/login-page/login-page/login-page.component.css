@@ -1,7 +1,23 @@
-.position-button {
-  margin-top: 5rem;
-  margin-left: 5rem;
+body {
+  min-height: 100vh;
+  margin: 0;
+  position: relative; /* Use relative positioning */
+}
+
+.container-login {
   display: flex;
+  flex-direction: column;
+
+  flex: 1; /* Allow container to take up remaining space */
+}
+.contenedor {
+  padding-top: 17rem;
+}
+.position-button {
+  margin-top: 2rem; /* Adjust spacing as needed */
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
 }
 
 .button-volver {
@@ -20,13 +36,17 @@
 .button-volver:hover {
   filter: drop-shadow(2px 2px 1px rgba(34, 197, 94, 0.609));
 }
-.contenedor {
-  width: 120rem;
-  max-width: 90%;
-  margin: 0 auto;
-  height: 80vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
+.footer-login {
+  position: absolute; /* Use absolute positioning */
+  bottom: 0; /* Place footer at the bottom */
+  left: 0; /* Span across the entire width */
+  width: 100%;
+  height: 10%; /* Set a fixed height for the footer */
+  background-color: var(--primary);
+  color: white;
+}
+
+.text{
+  
 }

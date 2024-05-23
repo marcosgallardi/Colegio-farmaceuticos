@@ -2,8 +2,11 @@
   @if(colegio$ | async; as resultColegios){
   <img [src]="resultColegios.logo" alt="logo colegio farm" class="logo" />
   }
-  <label for="" class="">Usuario</label>
-  <input type="text" />
-  <label for="">Usuario</label>
-  <input type="text" />
+  <form action="" class="form-login">
+    <label for="" class="label-login">Usuario</label>
+    <input type="text" class="input-login" />
+    <label for="" class="label-login">Contraseña</label>
+    <input type="password" class="input-login" />
+    <button class="button-login">Ingresar</button>
+  </form>
 </section>
