@@ -7,6 +7,7 @@ import { ContactoPageComponent } from './pages/contacto-page/contacto-page/conta
 import { FarmTurnosPagesComponent } from './pages/farm-turnos-pages/farm-turnos-pages/farm-turnos-pages.component';
 import { NovDetailPageComponent } from './pages/nov-detail-page/nov-detail-page.component';
 import { LoginPageComponent } from './pages/login-page/login-page/login-page.component';
+import { DashboardComponent } from './pages/dashboard/dashboard/dashboard.component';
 
 export const routes: Routes = [
   {
@@ -42,5 +43,9 @@ export const routes: Routes = [
   {
     path: 'login',
     component: LoginPageComponent,
+  },
+  {
+    path: 'dashboard',
+    component: DashboardComponent,
   },
 ];

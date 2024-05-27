@@ -4,7 +4,7 @@ import {
   OnInit,
   SimpleChange,
 } from '@angular/core';
-import { ActivatedRoute, Router, RouterOutlet } from '@angular/router';
+import { Router, RouterOutlet } from '@angular/router';
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 import { InstitucionalPageComponent } from './pages/institucional-page/institucional-page/institucional-page.component';
 import { NavbarComponent } from './components/navbar/navbar.component';

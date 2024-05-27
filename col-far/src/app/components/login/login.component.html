@@ -2,11 +2,23 @@
   @if(colegio$ | async; as resultColegios){
   <img [src]="resultColegios.logo" alt="logo colegio farm" class="logo" />
   }
-  <form action="" class="form-login">
+  <form [formGroup]="loginForm" class="form-login" (ngSubmit)="onSubmit()">
     <label for="" class="label-login">Usuario</label>
-    <input type="text" class="input-login" />
+    <input
+      type="text"
+      formControlName="name"
+      id="name"
+      class="input-login"
+      required
+    />
     <label for="" class="label-login">Contraseña</label>
-    <input type="password" class="input-login" />
-    <button class="button-login" onclick="onLogin">Ingresar</button>
+    <input
+      type="password"
+      formControlName="password"
+      id="password"
+      class="input-login"
+      required
+    />
+    <button class="button-login" type="submit">Ingresar</button>
   </form>
 </section>
