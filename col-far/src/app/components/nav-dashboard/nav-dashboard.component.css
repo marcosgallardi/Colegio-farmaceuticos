@@ -1,0 +1,51 @@
+.nav-dashboard {
+  width: calc(100% - 30rem);
+  height: 7rem;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  box-shadow: 5px 0 5px rgba(0, 0, 0, 0.1);
+  right: 0;
+}
+.logo-dashboard {
+  width: 20rem;
+  height: auto;
+  margin-left: 2rem;
+}
+.left-side {
+  display: flex;
+  align-items: center;
+}
+
+.space-icon {
+  margin-left: 3rem;
+}
+
+.button-sidebar {
+  color: black;
+}
+
+.right-side {
+  display: flex;
+  align-items: center;
+  padding-right: 5rem;
+}
+
+.right-side h4 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+  margin: 0;
+}
+
+.rounded-imagen-perfil {
+  width: 5rem;
+  border-radius: 100%;
+  margin-left: 3rem;
+}
+.shadow-gear {
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.609));
+}
