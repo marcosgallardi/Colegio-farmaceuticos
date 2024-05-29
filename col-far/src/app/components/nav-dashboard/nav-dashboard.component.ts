@@ -5,8 +5,6 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './nav-dashboard.component.html',
-  styleUrl: './nav-dashboard.component.css'
+  styleUrl: './nav-dashboard.component.css',
 })
-export class NavDashboardComponent {
-
-}
+export class NavDashboardComponent {}
