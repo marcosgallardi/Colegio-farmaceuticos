@@ -3,6 +3,12 @@
     <img src="../../../assets/logo.svg" alt="logo" class="logo-dashboard" />
   </div>
   <div class="items-sidebar">
-    <app-items-side [itemSide]="itemSides" />
+    <ul>
+    @for (item of itemSides; track $index) {
+      <p>
+        <app-items-side [itemSide]="item" />
+      </p>
+    }
+  </ul>
   </div>
 </section>

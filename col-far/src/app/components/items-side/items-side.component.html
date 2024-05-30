@@ -1,16 +1,17 @@
 <section>
-  <i class="{{ itemSide.icon }}"></i>
-  <p>{{ itemSide.name }}</p>
   @if( itemSide.dropdown ){
   <div class="dropdown">
     <button
-      class="btn btn-secondary dropdown-toggle"
+      class="button-item-dropdown"
       type="button"
       id="dropdownMenuButton1"
       data-bs-toggle="dropdown"
       aria-expanded="false"
     >
-      Dropdown button
+      <i class="{{ itemSide.icon }} icon-side"></i>
+
+      <p class="item-text-dropdown">{{ itemSide.name }}</p>
+      <i class="bi bi-caret-down fs-2"></i>
     </button>
     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
       <li><a class="dropdown-item" href="#">Action</a></li>
@@ -18,5 +19,11 @@
       <li><a class="dropdown-item" href="#">Something else here</a></li>
     </ul>
   </div>
+  }@else {
+  <button class="button-item">
+    <i class="{{ itemSide.icon }} icon-side"></i>
+
+    <p class="item-text">{{ itemSide.name }}</p>
+  </button>
   }
 </section>

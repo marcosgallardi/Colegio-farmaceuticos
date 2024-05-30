@@ -15,3 +15,8 @@
   height: auto;
   margin-left: 2rem;
 }
+.items-sidebar {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}

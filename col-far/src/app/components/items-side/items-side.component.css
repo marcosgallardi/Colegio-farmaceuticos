@@ -1,0 +1,48 @@
+.button-item {
+  width: 27rem;
+  height: 5rem;
+  border: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 0.8rem;
+  background-color: white;
+  color: black;
+}
+
+.button-item-dropdown {
+  width: 27rem;
+  height: 5rem;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.8rem;
+  background-color: white;
+  color: black;
+}
+
+.icon-side {
+  font-size: 2.5rem;
+  padding-left: 1rem;
+}
+
+.item-text {
+  padding-left: 2rem;
+  margin: 0;
+}
+
+.item-text-dropdown {
+  padding-right: 8rem;
+  margin: 0;
+}
+
+.button-item:hover {
+  background-color: black;
+  color: white;
+}
+
+.button-item-dropdown:hover{
+    background-color: black;
+    color: white;
+}
