@@ -32,6 +32,11 @@
   align-items: center;
   padding-right: 5rem;
 }
+.pointer {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
 
 .right-side h4 {
   font-size: 1.7rem;
@@ -45,7 +50,34 @@
   width: 5rem;
   border-radius: 100%;
   margin-left: 3rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade la sombra */
 }
 .shadow-gear {
   filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.609));
+}
+
+.shadow-gear1 {
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.609));
+  padding-right: 1rem;
+  font-size: 1.8rem;
+}
+
+.format {
+  padding: 1.5rem;
+  width: 15rem;
+  border-radius: 1rem;
+}
+.drop-item-user {
+  font-size: 1.5rem;
+  line-height: 3rem;
+
+  color: black;
+}
+
+.drop-item-user:hover {
+  background-color: #ecf0f4;
+}
+
+.format:hover:nth-child(1){
+  background-color: red;
 }

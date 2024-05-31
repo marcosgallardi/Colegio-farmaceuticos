@@ -47,6 +47,5 @@ export class SidebarComponent {
       icon: 'bi bi-bar-chart-line',
       dropdown: false,
     },
-    
   ];
 }

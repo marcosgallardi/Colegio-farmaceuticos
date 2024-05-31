@@ -4,11 +4,11 @@
   </div>
   <div class="items-sidebar">
     <ul>
-    @for (item of itemSides; track $index) {
+      @for (item of itemSides; track $index) {
       <p>
         <app-items-side [itemSide]="item" />
       </p>
-    }
-  </ul>
+      }
+    </ul>
   </div>
 </section>
