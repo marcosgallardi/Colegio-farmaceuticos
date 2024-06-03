@@ -7,7 +7,7 @@ import { itemSide } from '../../interfaces/items-side-interface';
   imports: [],
   templateUrl: './items-side.component.html',
   styleUrl: './items-side.component.css',
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class ItemsSideComponent {
   @Input() itemSide: itemSide = {
@@ -15,4 +15,12 @@ export class ItemsSideComponent {
     icon: 'algo',
     dropdown: false,
   };
+  @Input() id: any = {
+    id: 0,
+  };
+
+  @Input() selectComp: (string:string) => void = ;
+  ngOnInit(): void {
+    console.log(this.id);
+  }
 }

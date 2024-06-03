@@ -6,7 +6,7 @@
     <ul>
       @for (item of itemSides; track $index) {
       <p>
-        <app-items-side [itemSide]="item" />
+        <app-items-side [itemSide]="item" [id]="$index" [selectComp]="onClickItemSidebar"/>
       </p>
       }
     </ul>
