@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { ItemsSideComponent } from '../items-side/items-side.component';
 import { AsyncPipe } from '@angular/common';
 import { itemSide } from '../../interfaces/items-side-interface';
-import { ShowDashboardService } from '../../core/showDashboard/show-dashboard.service';
 
 @Component({
   selector: 'app-sidebar',
@@ -12,11 +11,7 @@ import { ShowDashboardService } from '../../core/showDashboard/show-dashboard.se
   styleUrl: './sidebar.component.css',
 })
 export class SidebarComponent {
-  constructor(private showDashboardService: ShowDashboardService) {}
 
-  onClickItemSidebar(item: string) {
-    this.showDashboardService.setSelectedComponent(item);
-  }
 
   itemSides: itemSide[] = [
     {

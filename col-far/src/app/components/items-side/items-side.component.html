@@ -45,7 +45,7 @@
   </div>
 
   }@else {
-  <button class="button-item">
+  <button type="button" class="button-item" (click)="onClickItemSidebar(itemSide.name)">
     <i class="{{ itemSide.icon }} icon-side"></i>
 
     <p class="item-text">{{ itemSide.name }}</p>

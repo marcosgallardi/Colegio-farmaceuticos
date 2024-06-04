@@ -1,4 +1,17 @@
 <section class="background-dashboard">
   <app-nav-dashboard />
   <app-sidebar />
+ 
+  @if (currentComponent === "Farmacias") {
+
+  <app-farmacias />
+  }@else if (currentComponent=== "Turnos") {
+  <app-turnos />
+  }@else if (currentComponent === "Novedades") {
+  <app-novedades />
+  }@else if (currentComponent === "Datos") {
+  <app-mod-datos />
+  }@else if (currentComponent === "Contacto") {
+  <app-contactos />
+  }
 </section>
