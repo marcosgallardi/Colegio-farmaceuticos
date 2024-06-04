@@ -17,6 +17,25 @@
 }
 .items-sidebar {
   display: flex;
-
+  justify-content: flex-start;
   padding-top: 2rem;
+}
+
+.width-side {
+  width: 25rem;
+}
+
+@media (min-width: 768px) {
+  .width-side {
+    width: 32rem;
+  }
+}
+
+.spacingList{
+  padding: 0;
+}
+@media (min-width: 768px) { 
+ .spacingList{
+ padding-left: 2rem;
+} 
 }

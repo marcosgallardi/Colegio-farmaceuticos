@@ -5,10 +5,17 @@
   height: 90vh;
 }
 .position-button {
-  margin-top: 4rem; /* Adjust spacing as needed */
-  margin-left: 4rem;
+  margin-top: 3rem;
+  margin-left: 2rem;
   display: flex;
   align-items: center;
+}
+
+@media (min-width: 768px) { 
+ .position-button{
+  margin-top: 4rem;
+  margin-left: 4rem;
+} 
 }
 
 .button-volver {

@@ -5,7 +5,13 @@
 }
 
 .logo {
-  width: 35rem;
+  width: 28rem;
+  height: auto;
+}
+@media (min-width: 768px) {
+  .logo {
+    width: 35rem;
+  }
 }
 
 .label-login {
@@ -22,7 +28,7 @@
 
 .input-login {
   display: block;
-  width: 35rem;
+  width: 30rem;
   border: none;
   border-bottom: 3px solid var(--secondary);
   padding: 2px 0;
@@ -31,6 +37,12 @@
   outline: none;
   transition: border-color 0.3s ease;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .input-login {
+    width: 35rem;
+  }
 }
 
 .input-login:hover,

@@ -1,4 +1,4 @@
-<section class="sidebar">
+<section class="sidebar d-none d-lg-block">
   <div class="position-logo">
     <img src="../../../assets/logo.svg" alt="logo" class="logo-dashboard" />
   </div>
@@ -6,13 +6,33 @@
     <ul>
       @for (item of itemSides; track $index) {
       <p>
-        <app-items-side
-          [itemSide]="item"
-          [id]="$index"
-          
-        />
+        <app-items-side [itemSide]="item" [id]="$index" />
       </p>
       }
     </ul>
+  </div>
+</section>
+
+<section class="d-lg-none">
+  <div
+    class="offcanvas offcanvas-start width-side bg-white"
+    tabindex="-1"
+    id="offcanvasRight1"
+    aria-labelledby="offcanvasRightLabel"
+  >
+    <div class="offcanvas-header logo-position-screen">
+      <img src="../../../assets/logo-mob-menu.svg" alt="" class="logo" />
+    </div>
+    <div class="offcanvas-body">
+      <div class="items-sidebar">
+        <ul class="spacingList">
+          @for (item of itemSides; track $index) {
+
+          <app-items-side [itemSide]="item" [id]="$index" />
+
+          }
+        </ul>
+      </div>
+    </div>
   </div>
 </section>

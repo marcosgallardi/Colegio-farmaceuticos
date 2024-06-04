@@ -11,8 +11,6 @@ import { itemSide } from '../../interfaces/items-side-interface';
   styleUrl: './sidebar.component.css',
 })
 export class SidebarComponent {
-
-
   itemSides: itemSide[] = [
     {
       name: 'Colegio',

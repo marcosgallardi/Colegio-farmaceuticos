@@ -30,7 +30,7 @@ export class DashboardComponent {
 
   constructor(private showDashboardService: ShowDashboardService) {}
 
-  ngDoCheck( ): void {
+  ngDoCheck(): void {
     this.currentComponent = this.showDashboardService.getSelectedComponent();
   }
 }

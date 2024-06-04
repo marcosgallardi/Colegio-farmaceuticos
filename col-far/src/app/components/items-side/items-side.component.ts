@@ -14,7 +14,6 @@ export class ItemsSideComponent {
   constructor(private showDashboardService: ShowDashboardService) {}
 
   onClickItemSidebar(item: string): void {
-    
     this.showDashboardService.setSelectedComponent(item);
   }
 
