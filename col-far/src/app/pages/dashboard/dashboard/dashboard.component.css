@@ -1,5 +1,20 @@
 .background-dashboard {
   background-color: #ecf0f4;
   width: 100%;
+
+  display: flex;
+}
+
+.comp-sidebar {
   height: 100vh;
+  width: 30rem;
+}
+
+.farm-section {
+  margin-top: 7.1rem;
+  display: flex;
+
+  justify-content: center;
+
+  width: calc(100% - 30rem);
 }

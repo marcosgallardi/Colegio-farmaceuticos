@@ -4,6 +4,7 @@ import { GoogleMapsModule } from '@angular/google-maps';
 import { GoogleMap } from '@angular/google-maps';
 import { FooterComponent } from '../../../components/footer/footer.component';
 import { NavbarComponent } from '../../../components/navbar/navbar.component';
+import { ContactoCompComponent } from '../../../components/contacto-comp/contacto-comp.component';
 @Component({
   selector: 'app-contacto-page',
   standalone: true,
@@ -12,6 +13,7 @@ import { NavbarComponent } from '../../../components/navbar/navbar.component';
     GoogleMapsModule,
     NavbarComponent,
     FooterComponent,
+    ContactoCompComponent,
   ],
   templateUrl: './contacto-page.component.html',
   styleUrl: './contacto-page.component.css',

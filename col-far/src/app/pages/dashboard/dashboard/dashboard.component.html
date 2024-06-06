@@ -1,17 +1,28 @@
 <section class="background-dashboard">
   <app-nav-dashboard />
-  <app-sidebar />
+  <div class="comp-sidebar">
+    <app-sidebar />
+  </div>
 
   @if (currentComponent === "Farmacias") {
-
-  <app-farmacias />
+  <section class="farm-section">
+    <app-farmacias />
+  </section>
   }@else if (currentComponent=== "Turnos") {
-  <app-turnos />
+  <section class="farm-section">
+    <app-turnos />
+  </section>
   }@else if (currentComponent === "Novedades") {
-  <app-novedades />
+  <section class="farm-section">
+    <app-novedades />
+  </section>
   }@else if (currentComponent === "Datos") {
-  <app-mod-datos />
+  <section class="farm-section">
+    <app-mod-datos />
+  </section>
   }@else if (currentComponent === "Contacto") {
-  <app-contactos />
+  <section class="farm-section">
+    <app-contactos />
+  </section>
   }
 </section>
