@@ -6,8 +6,6 @@ import { ContactoCompComponent } from '../../contacto-comp/contacto-comp.compone
   standalone: true,
   imports: [ContactoCompComponent],
   templateUrl: './contactos.component.html',
-  styleUrl: './contactos.component.css'
+  styleUrl: './contactos.component.css',
 })
-export class ContactosComponent {
-
-}
+export class ContactosComponent {}

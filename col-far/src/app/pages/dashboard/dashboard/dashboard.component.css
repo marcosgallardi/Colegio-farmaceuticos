@@ -1,8 +1,8 @@
 .background-dashboard {
   background-color: #ecf0f4;
+  display: flex;
   width: 100%;
 
-  display: flex;
 }
 
 .comp-sidebar {

@@ -1,0 +1,10 @@
+.text-contact {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 4rem;
+    color: var(--primary);
+  }
+
+  .mod-contactos{
+    width: calc(100vw - 30rem) ;
+  }
