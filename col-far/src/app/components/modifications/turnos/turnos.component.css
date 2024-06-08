@@ -1,0 +1,31 @@
+.text-turnos {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 4rem;
+  color: var(--primary);
+}
+.turnos-comp {
+  padding-top: 4rem;
+}
+
+.form-turnos {
+  margin-top: 4rem;
+}
+.head-turnos td {
+  font-weight: 600;
+}
+
+.button-turnos {
+  padding: 1rem 1rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  background-color: var(--primary);
+  color: white;
+  transition: background-color 0.4 ease;
+}
+
+.button-turnos:hover {
+  background-color: #041e42de;
+}
