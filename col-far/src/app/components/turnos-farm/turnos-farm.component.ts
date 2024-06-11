@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-import { Farmacias } from '../../interfaces/farmacias-interface';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-turnos-farm',
@@ -9,5 +8,6 @@ import { Farmacias } from '../../interfaces/farmacias-interface';
   styleUrl: './turnos-farm.component.css',
 })
 export class TurnosFarmComponent {
+  @Input() isDashboard: boolean = false;
   farmaciasTurnos: any = [{}];
 }

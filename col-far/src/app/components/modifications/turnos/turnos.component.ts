@@ -5,7 +5,7 @@ import { ButtonMainComponent } from '../../button-main/button-main.component';
 @Component({
   selector: 'app-turnos',
   standalone: true,
-  imports: [TurnosFarmComponent,ButtonMainComponent],
+  imports: [TurnosFarmComponent, ButtonMainComponent],
   templateUrl: './turnos.component.html',
   styleUrl: './turnos.component.css',
 })

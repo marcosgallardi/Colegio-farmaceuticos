@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Farmacias } from '../../interfaces/farmacias-interface';
 
 @Component({
@@ -9,6 +9,8 @@ import { Farmacias } from '../../interfaces/farmacias-interface';
   styleUrl: './tabla-farmacias.component.css',
 })
 export class TablaFarmaciasComponent {
+  @Input() isDashboard: boolean = false;
+
   farmacias: Farmacias[] = [
     {
       id: 1,

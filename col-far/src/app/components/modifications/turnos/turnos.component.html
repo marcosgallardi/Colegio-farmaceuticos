@@ -1,33 +1,34 @@
 <section>
   <h3 class="text-turnos">Modificar farmacias de turno</h3>
   <div class="turnos-comp">
-    <app-turnos-farm />
+    <app-turnos-farm [isDashboard]="true" />
   </div>
   <form action="" class="form-turnos">
-    <table class="table">
+    <table class="table text-center">
       <thead class="head-turnos">
-        <td>Farnacia</td>
+        <td>Farmacia</td>
         <td>Localidad</td>
         <td>Direccion</td>
         <td>Modificar</td>
       </thead>
       <tbody>
         <tr>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>mdo</td>
+          <td>Gonzales</td>
+          <td>Mercedes</td>
+          <td>7 y 24</td>
+          <td><button class="button-turnos">Agregar</button></td>
+        </tr>
+        <tr>
+          <td>Telesca</td>
+          <td>Mercedes</td>
+          <td>25 y 6</td>
           <td colspan="2"><button class="button-turnos">Agregar</button></td>
         </tr>
         <tr>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>fat</td>
-          <td colspan="2"><button class="button-turnos">Agregar</button></td>
-        </tr>
-        <tr>
-          <td colspan="2">Larry the Bird</td>
-          <td>twitter</td>
-          <td colspan="2"><button class="button-turnos">Agregar</button></td>
+          <td>Gomez</td>
+          <td>Mercedes</td>
+          <td>25 y 6</td>
+          <td><button class="button-turnos">Agregar</button></td>
         </tr>
       </tbody>
     </table>
