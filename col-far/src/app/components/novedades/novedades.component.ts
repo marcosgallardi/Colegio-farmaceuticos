@@ -25,6 +25,8 @@ import { RouterLink } from '@angular/router';
 export class NovedadesComponent implements OnInit {
   @Input() showTitle: boolean = true;
 
+ 
+
   config: SwiperOptions = {};
   novedadesList: Novedades[] = [
     {

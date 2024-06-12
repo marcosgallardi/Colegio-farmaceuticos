@@ -1,6 +1,6 @@
 <section class="mod-farms">
   <h3 class="text-farms-mod">Modificar farmacias</h3>
-  <app-tabla-farmacias [isDashboard]="true" />
+  <app-tabla-farmacias [isDashboard]="true" (isSelected)="handleSelection($event)"/>
   <div class="container">
     <button class="button-crear-farm" (click)="(onClickButtons())">
       Crear farmacia

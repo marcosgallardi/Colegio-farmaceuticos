@@ -43,7 +43,12 @@
                   ></a>
                 </div>
                 @if (isDashboard) {
-                <button class="button-farm">Modificar</button>
+                <button
+                  class="button-farm"
+                  (click)="onClickButtons(farmacia.id)"
+                >
+                  Modificar
+                </button>
                 <button class="button-farm1">Sacar</button>
 
                 }

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Farmacias } from '../../interfaces/farmacias-interface';
 
 @Component({
@@ -10,6 +10,13 @@ import { Farmacias } from '../../interfaces/farmacias-interface';
 })
 export class TablaFarmaciasComponent {
   @Input() isDashboard: boolean = false;
+  @Output() isSelected = new EventEmitter<boolean>();
+  value: boolean = false;
+  onClickButtons(id:number) {
+    this.value = !this.value;
+    this.isSelected.emit(this.value);
+    console.log(id)
+  }
 
   farmacias: Farmacias[] = [
     {
