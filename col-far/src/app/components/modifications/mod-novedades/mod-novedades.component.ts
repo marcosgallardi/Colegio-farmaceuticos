@@ -8,4 +8,10 @@ import { NovedadesComponent } from '../../novedades/novedades.component';
   templateUrl: './mod-novedades.component.html',
   styleUrl: './mod-novedades.component.css',
 })
-export class ModNovedadesComponent {}
+export class ModNovedadesComponent {
+  isSelected: boolean = false;
+
+  handleSelection(selected: boolean) {
+    this.isSelected = selected;
+  }
+}

@@ -10,7 +10,29 @@
       <swiper-container navigation="true" pagination="true">
         <swiper-slide>
           <div class="swiper-wrapper">
-            @for (item of novedadesList; track item.id) {
+            @for (item of novedadesList; track item.id) { @if (isDashboard) {
+            <form class="dashboard-nov" (click)="onClickButtons(item.id)">
+              <div class="swiper-slide">
+                <img [src]="item.imgNov" alt="" class="img-novedades" />
+                <div class="novedad_slide">
+                  <p class="fecha_card">{{ item.fecha }}</p>
+                  <h4>
+                    {{ item.titulo }}
+                    <br />y archivos de texto.
+                  </h4>
+                  <h5>
+                    {{ item.subtitulo }}
+                  </h5>
+                  <a
+                    routerLink="novedadesDetail/{{ item.id }}"
+                    class="boton_mas"
+                    >LEER MÁS</a
+                  >
+                </div>
+              </div>
+            </form>
+
+            }@else {
             <div class="swiper-slide">
               <img [src]="item.imgNov" alt="" class="img-novedades" />
               <div class="novedad_slide">
@@ -27,13 +49,35 @@
                 >
               </div>
             </div>
-            }
+            } }
           </div>
         </swiper-slide>
 
         <swiper-slide>
           <div class="swiper-wrapper">
-            @for (item of novedadesList; track item.id) {
+            @for (item of novedadesList; track item.id) { @if (isDashboard) {
+            <form class="dashboard-nov" (click)="onClickButtons(item.id)">
+              <div class="swiper-slide">
+                <img [src]="item.imgNov" alt="" class="img-novedades" />
+                <div class="novedad_slide">
+                  <p class="fecha_card">{{ item.fecha }}</p>
+                  <h4>
+                    {{ item.titulo }}
+                    <br />y archivos de texto.
+                  </h4>
+                  <h5>
+                    {{ item.subtitulo }}
+                  </h5>
+                  <a
+                    routerLink="novedadesDetail/{{ item.id }}"
+                    class="boton_mas"
+                    >LEER MÁS</a
+                  >
+                </div>
+              </div>
+            </form>
+
+            }@else {
             <div class="swiper-slide">
               <img [src]="item.imgNov" alt="" class="img-novedades" />
               <div class="novedad_slide">
@@ -45,18 +89,21 @@
                 <h5>
                   {{ item.subtitulo }}
                 </h5>
-                <a routerLink="/novedadesDetail/{{ item.id }}" class="boton_mas"
+                <a routerLink="novedadesDetail/{{ item.id }}" class="boton_mas"
                   >LEER MÁS</a
                 >
               </div>
             </div>
-            }
+            } }
           </div>
         </swiper-slide>
       </swiper-container>
     </div>
     <div class="button-main">
+      @if(!isDashboard){
       <app-button-main [text]="textButton" />
+
+      }
     </div>
   </div>
 </div>

@@ -10,9 +10,9 @@ import { TablaFarmaciasComponent } from '../../tabla-farmacias/tabla-farmacias.c
 })
 export class FarmaciasComponent {
   isSelected: boolean = false;
-  handleSelection(selected: boolean){
+  handleSelection(selected: boolean) {
     this.isSelected = selected;
-  };
+  }
 
   onClickButtons() {
     setTimeout(() => {

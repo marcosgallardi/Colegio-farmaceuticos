@@ -12,10 +12,11 @@ export class TablaFarmaciasComponent {
   @Input() isDashboard: boolean = false;
   @Output() isSelected = new EventEmitter<boolean>();
   value: boolean = false;
-  onClickButtons(id:number) {
+  idSelected: number = 0;
+  onClickButtons(id: number) {
     this.value = !this.value;
     this.isSelected.emit(this.value);
-    console.log(id)
+    this.idSelected = id;
   }
 
   farmacias: Farmacias[] = [

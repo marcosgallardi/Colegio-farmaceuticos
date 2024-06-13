@@ -71,3 +71,12 @@
   justify-content: center;
   padding-top: 4rem;
 }
+
+.dashboard-nov {
+  cursor: pointer;
+}
+.dashboard-nov:hover {
+  border: solid 4px var(--secondary);
+  border-radius: 0.6rem;
+  
+}

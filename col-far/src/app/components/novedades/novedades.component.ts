@@ -2,8 +2,9 @@ import {
   Component,
   OnInit,
   CUSTOM_ELEMENTS_SCHEMA,
-  inject,
   Input,
+  EventEmitter,
+  Output,
 } from '@angular/core';
 import { SwiperOptions } from 'swiper/types';
 import { ButtonMainComponent } from '../button-main/button-main.component';
@@ -24,8 +25,15 @@ import { RouterLink } from '@angular/router';
 })
 export class NovedadesComponent implements OnInit {
   @Input() showTitle: boolean = true;
-
- 
+  @Input() isDashboard: boolean = false;
+  idSelected: number = 0;
+  @Output() isSelected = new EventEmitter<boolean>();
+  value: boolean = false;
+  onClickButtons(id: number) {
+    this.value = !this.value;
+    this.isSelected.emit(this.value);
+    this.idSelected = id;
+  }
 
   config: SwiperOptions = {};
   novedadesList: Novedades[] = [

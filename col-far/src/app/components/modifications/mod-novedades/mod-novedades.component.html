@@ -1,4 +1,33 @@
 <section>
   <h3 class="text-mod-nov">Modificar Novedades</h3>
-  <app-novedades [showTitle]=false/>
+  <app-novedades
+    [showTitle]="false"
+    [isDashboard]="true"
+    (isSelected)="handleSelection($event)"
+  />
+
+  @if(isSelected){
+  <form action="" class="form-nov">
+    <div class="grid-form-nov">
+      <div class="div">
+        <label for="" class="label-nov">Fecha</label>
+        <input type="date" class="input-nov" required />
+      </div>
+      <div class="div">
+        <label for="" class="label-nov">Titulo</label>
+        <input type="text" class="input-nov" required />
+      </div>
+      <div class="div">
+        <label for="" class="label-nov">Descripcion</label>
+        <input type="text" class="input-nov" required />
+      </div>
+      <div class="div">
+        <label for="" class="label-nov">Imagen</label>
+        <input type="file" class="input-nov" required />
+      </div>
+    </div>
+    <button type="submit" class="button-nov">Guardar</button>
+  </form>
+
+  }
 </section>
