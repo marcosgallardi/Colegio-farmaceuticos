@@ -4,10 +4,10 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class ShowDashboardService {
-  private showDashboard!: string;
+  private showDashboard!: string | undefined;
 
   constructor() {}
-  setSelectedComponent(selectedComponent: string) {
+  setSelectedComponent(selectedComponent: string | undefined) {
     this.showDashboard = selectedComponent;
   }
   getSelectedComponent() {

@@ -13,7 +13,7 @@ import { ShowDashboardService } from '../../core/showDashboard/show-dashboard.se
 export class ItemsSideComponent {
   constructor(private showDashboardService: ShowDashboardService) {}
 
-  onClickItemSidebar(item: string): void {
+  onClickItemSidebar(item: string | undefined): void {
     this.showDashboardService.setSelectedComponent(item);
   }
 

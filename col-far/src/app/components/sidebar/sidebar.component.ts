@@ -16,11 +16,13 @@ export class SidebarComponent {
       name: 'Colegio',
       icon: 'bi bi-house',
       dropdown: true,
+      inDropdown: ['Info Colegio', 'Comision Directiva'],
     },
     {
       name: 'Usuarios',
       icon: 'bi bi-people',
       dropdown: true,
+      inDropdown: ['Crear', 'Modificar','Eliminar'],
     },
     {
       name: 'Novedades',

@@ -23,21 +23,32 @@
       >
         <div class="item-body">
           <ul class="list-items-body">
-            <button class="button-item-dropdown1">
+            <button
+              class="button-item-dropdown1"
+              (click)="onClickItemSidebar(itemSide.inDropdown?.[0] ?? '')"
+            >
               <i class="bi bi-dash-lg icon-side"></i>
-              <p href="" class="item-text-dropdown1">COmp{{ id }}</p>
+              <p href="" class="item-text-dropdown1">
+                {{ itemSide.inDropdown?.[0] }}
+              </p>
               <div class="div"></div>
             </button>
-            <button class="button-item-dropdown1">
+            <button class="button-item-dropdown1"  (click)="onClickItemSidebar(itemSide.inDropdown?.[1] ?? '')">
               <i class="bi bi-dash-lg icon-side"></i>
-              <p href="" class="item-text-dropdown1">COmp{{ id }}</p>
+              <p href="" class="item-text-dropdown1">
+                {{ itemSide.inDropdown?.[1] }}
+              </p>
               <div class="div"></div>
             </button>
+            @if (itemSide.inDropdown && itemSide.inDropdown.length > 2) {
             <button class="button-item-dropdown1">
               <i class="bi bi-dash-lg icon-side"></i>
-              <p href="" class="item-text-dropdown1">COmp{{ id }}</p>
+              <p href="" class="item-text-dropdown1">
+                {{ itemSide.inDropdown && itemSide.inDropdown?.[2] }}
+              </p>
               <div class="div"></div>
             </button>
+            }
           </ul>
         </div>
       </div>
