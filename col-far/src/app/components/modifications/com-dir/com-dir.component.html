@@ -1,1 +1,26 @@
-<p>com-dir works!</p>
+<section>
+  <app-comision-directiva
+    [isDashboard]="true"
+    (isSelected)="handleSelection($event)"
+  />
+  @if(isSelected){
+    <form action="" class="form-nov">
+        <div class="grid-form-nov">
+         
+          <div class="div">
+            <label for="" class="label-nov">Nombre</label>
+            <input type="text" class="input-nov" required />
+          </div>
+          <div class="div">
+            <label for="" class="label-nov">Jerarquia</label>
+            <input type="text" class="input-nov" required />
+          </div>
+          <div class="div">
+            <label for="" class="label-nov">Imagen</label>
+            <input type="file" class="input-nov2" required />
+          </div>
+        </div>
+        <button type="submit" class="button-nov">Guardar</button>
+      </form>
+  }
+</section>

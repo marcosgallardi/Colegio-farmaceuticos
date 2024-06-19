@@ -8,6 +8,11 @@ import { TurnosComponent } from '../../../components/modifications/turnos/turnos
 import { ShowDashboardService } from '../../../core/showDashboard/show-dashboard.service';
 import { AsyncPipe } from '@angular/common';
 import { ModNovedadesComponent } from '../../../components/modifications/mod-novedades/mod-novedades.component';
+import { ActUserComponent } from '../../../components/modifications/act-user/act-user.component';
+import { ComDirComponent } from '../../../components/modifications/com-dir/com-dir.component';
+import { CrearUserComponent } from '../../../components/modifications/crear-user/crear-user.component';
+import { ElimUserComponent } from '../../../components/modifications/elim-user/elim-user.component';
+import { InfoColComponent } from '../../../components/modifications/info-col/info-col.component';
 
 @Component({
   selector: 'app-dashboard',
@@ -20,6 +25,11 @@ import { ModNovedadesComponent } from '../../../components/modifications/mod-nov
     FarmaciasComponent,
     ModDatosComponent,
     TurnosComponent,
+    ActUserComponent,
+    ComDirComponent,
+    CrearUserComponent,
+    ElimUserComponent,
+    InfoColComponent,
     AsyncPipe,
   ],
   templateUrl: './dashboard.component.html',

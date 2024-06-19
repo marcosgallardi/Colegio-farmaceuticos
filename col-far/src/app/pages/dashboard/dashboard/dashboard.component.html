@@ -25,25 +25,24 @@
     <app-contactos />
   </section>
   }@else if (currentComponent === "Info Colegio") {
-    <section class="farm-section">
-      <app-contactos />
-    </section>
-    }@else if (currentComponent === "Comision Directiva") {
-      <section class="farm-section">
-        <app-contactos />
-      </section>
-      }@else if (currentComponent === "Crear") {
-        <section class="farm-section">
-          <app-contactos />
-        </section>
-        }@else if (currentComponent === "Modificar") {
-          <section class="farm-section">
-            <app-contactos />
-          </section>
-          }@else if (currentComponent === "Eliminar") {
-            <section class="farm-section">
-              <app-contactos />
-            </section>
-            }
-
+  <section class="farm-section">
+    <app-info-col />
+  </section>
+  }@else if (currentComponent === "Comision Directiva") {
+  <section class="farm-section">
+    <app-com-dir />
+  </section>
+  }@else if (currentComponent === "Crear") {
+  <section class="farm-section">
+    <app-crear-user />
+  </section>
+  }@else if (currentComponent === "Modificar") {
+  <section class="farm-section">
+    <app-act-user />
+  </section>
+  }@else if (currentComponent === "Eliminar") {
+  <section class="farm-section">
+    <app-elim-user />
+  </section>
+  }
 </section>

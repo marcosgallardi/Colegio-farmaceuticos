@@ -1,7 +1,10 @@
 import {
   CUSTOM_ELEMENTS_SCHEMA,
   Component,
+  EventEmitter,
+  Input,
   OnInit,
+  Output,
   inject,
 } from '@angular/core';
 import { Comision } from '../../interfaces/comision-interface';
@@ -18,7 +21,17 @@ import { SwiperOptions } from 'swiper/types';
   styleUrl: './comision-directiva.component.css',
 })
 export class ComisionDirectivaComponent implements OnInit {
+  @Input() isDashboard: boolean = false;
+  idSelected: number = 0;
+  @Output() isSelected = new EventEmitter<boolean>();
+  value: boolean = false;
+  onClickButtons(id: number) {
+    this.value = !this.value;
+    this.isSelected.emit(this.value);
+    this.idSelected = id;
+  }
   config: SwiperOptions = {};
+
   //  comisionList: Comision[] = [];
   // comisionService: ComisionService = inject(ComisionService);
   // constructor() {
@@ -46,25 +59,28 @@ export class ComisionDirectivaComponent implements OnInit {
   }
   comisionList: Comision[] = [
     {
+      id: 1,
       image: '../../../assets/integrante.jpg',
       name: 'Josep Guardiola',
       title: 'Presidente',
     },
     {
+      id: 2,
       image: '../../../assets/integrante.jpg',
       name: 'Josep Guardiola',
       title: 'Vicepresidente',
     },
     {
+      id: 3,
       image: '../../../assets/integrante.jpg',
       name: 'Josep Guardiola',
       title: 'Secretario',
     },
     {
+      id: 4,
       image: '../../../assets/integrante.jpg',
       name: 'Josep Guardiola',
       title: 'Tesorero',
     },
-    
   ];
 }

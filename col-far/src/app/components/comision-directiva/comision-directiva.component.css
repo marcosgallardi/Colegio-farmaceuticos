@@ -46,3 +46,10 @@
   font-weight: 700;
   font-size: 1.6rem;
 }
+.dashboard-nov {
+  cursor: pointer;
+}
+.dashboard-nov:hover {
+  border: solid 4px var(--secondary);
+  border-radius: 0.6rem;
+}
