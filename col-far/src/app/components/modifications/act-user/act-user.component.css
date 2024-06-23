@@ -1,0 +1,45 @@
+.text-mod-users {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 4rem;
+  color: var(--primary);
+}
+.rounded-imagen-perfil {
+  width: 5rem;
+  border-radius: 100%;
+  margin-left: 3rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade la sombra */
+}
+
+.button-mod-user {
+    padding: 1rem 1rem;
+    margin-left: 5rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    background-color: var(--primary);
+    color: white;
+    transition: background-color 0.4 ease;
+  }
+  
+  .button-mod-user:hover {
+    background-color: #041e42de;
+  }
+  
+  .button-mod-user1{
+    padding: 1rem 1rem;
+    margin-left: 2rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    background-color: rgb(224, 23, 23);
+    color: white;
+    transition: background-color 0.4 ease;
+  }
+  
+  .button-mod-user1:hover {
+    background-color: rgba(224, 23, 23, 0.692);
+  }
+  

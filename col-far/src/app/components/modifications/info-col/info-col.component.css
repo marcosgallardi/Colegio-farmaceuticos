@@ -4,6 +4,12 @@
   
     flex-direction: column;
   }
+  .text-colegios{
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 4rem;
+    color: var(--primary);
+  }
   .grid-form-cont {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

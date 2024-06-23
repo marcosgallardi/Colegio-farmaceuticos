@@ -5,6 +5,13 @@
   flex-direction: column;
   height: calc(100vh - 13rem);
 }
+
+.text-creat-user {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 4rem;
+  color: var(--primary);
+}
 .form-createUser {
   display: flex;
   flex-direction: column;

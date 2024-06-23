@@ -1,1 +1,33 @@
-<p>act-user works!</p>
+<section>
+  <h3 class="text-mod-users">Modificar usuarios</h3>
+  <div class="card p-3 border-0 shadow-sm">
+    <div class="card-body">
+      <div class="table-responsive">
+        <table class="table table-striped table-hover align-middle">
+          <thead>
+            <tr class="table-head">
+              <th scope="col">Foto del perfil</th>
+              <th scope="col">Usuario</th>
+            </tr>
+          </thead>
+          <tbody class="table-body">
+            @for (user of users; track user.id) {
+            <tr>
+              <td>
+                <img
+                  src="../../../assets/integrante.jpg"
+                  alt="imagen-perfil"
+                  class="rounded-imagen-perfil"
+                />
+              </td>
+              <td>{{ user.name }}</td>
+              <td><button class="button-mod-user">Modificar</button></td>
+              <td><button class="button-mod-user1">Eliminar</button></td>
+            </tr>
+            }
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
