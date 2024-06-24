@@ -13,7 +13,7 @@ export class ActUserComponent {
     {
       id: 1,
       name: 'Marcos gallardi',
-      userName:'pepito',
+      userName: 'pepito',
       password: '123',
       token: '123',
       role: 'Admin',
@@ -21,7 +21,7 @@ export class ActUserComponent {
     {
       id: 2,
       name: 'Elvio Lento',
-      userName:'pepito',
+      userName: 'pepito',
       password: '1233',
       token: '12334',
       role: 'Superadmin',
@@ -29,7 +29,7 @@ export class ActUserComponent {
     {
       id: 3,
       name: 'Lionel messi',
-      userName:'pepito',
+      userName: 'pepito',
       password: '1235',
       token: '1235',
       role: 'Admin',
@@ -37,14 +37,18 @@ export class ActUserComponent {
     {
       id: 4,
       name: 'Javier milei',
-      userName:'pepito',
+      userName: 'pepito',
       password: '1237',
       token: '1238',
       role: 'Admin',
     },
   ];
-  onClickButtons(id: number) {
-  
 
+  userActive: boolean = false;
+
+  onClickButtons(id: number) {
+    this.userActive = !this.userActive;
+    const currentUser = this.users.find((user) => user.id === id);
+    console.log(currentUser);
   }
 }

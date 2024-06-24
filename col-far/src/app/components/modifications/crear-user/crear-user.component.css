@@ -19,6 +19,14 @@
   align-items: center;
 }
 
+.grid-create-user {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  column-gap: 3rem;
+}
+
 .img-create {
   display: flex;
   width: 20rem;
@@ -29,7 +37,7 @@
   display: block;
   padding-top: 2rem;
   text-align: start;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 600;
   color: var(--secondary);
 }

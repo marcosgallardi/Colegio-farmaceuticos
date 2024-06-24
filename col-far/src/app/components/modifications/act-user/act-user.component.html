@@ -1,6 +1,6 @@
 <section>
   <h3 class="text-mod-users">Modificar usuarios</h3>
-  <div class="card p-3 border-0 shadow-sm">
+  <div class="card p-3 border-0 shadow-sm custom-card-size">
     <div class="card-body">
       <div class="table-responsive">
         <table class="table table-striped table-hover align-middle">
@@ -21,7 +21,14 @@
                 />
               </td>
               <td>{{ user.name }}</td>
-              <td><button class="button-mod-user">Modificar</button></td>
+              <td>
+                <button
+                  class="button-mod-user"
+                  (click)="onClickButtons(user.id)"
+                >
+                  Modificar
+                </button>
+              </td>
               <td><button class="button-mod-user1">Eliminar</button></td>
             </tr>
             }
@@ -30,4 +37,27 @@
       </div>
     </div>
   </div>
+  @if(userActive){
+  <form action="" class="form-actUser">
+    <div class="grid-form-actUser">
+      <div class="div">
+        <label for="" class="label-actUser">Usuario</label>
+        <input type="text" class="input-actUser" required />
+      </div>
+      <div class="div">
+        <label for="" class="label-actUser">Nombre completo</label>
+        <input type="text" class="input-actUser" required />
+      </div>
+      <div class="div">
+        <label for="" class="label-actUser">Contraseña</label>
+        <input type="text" class="input-actUser" required />
+      </div>
+      <div class="div">
+        <label for="" class="label-actUser">Imagen de perfil</label>
+        <input type="file" class="input-actUser2" required />
+      </div>
+    </div>
+    <button type="submit" class="button-actUser">Guardar</button>
+  </form>
+  }
 </section>

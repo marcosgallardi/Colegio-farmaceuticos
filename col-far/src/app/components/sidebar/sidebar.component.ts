@@ -22,7 +22,7 @@ export class SidebarComponent {
       name: 'Usuarios',
       icon: 'bi bi-people',
       dropdown: true,
-      inDropdown: ['Crear', 'Modificar','Eliminar'],
+      inDropdown: ['Crear', 'Modificar'],
     },
     {
       name: 'Novedades',
