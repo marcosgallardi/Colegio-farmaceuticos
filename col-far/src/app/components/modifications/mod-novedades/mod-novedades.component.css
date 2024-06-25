@@ -1,8 +1,17 @@
 .text-mod-nov {
   text-align: center;
   margin-top: 3rem;
-  font-size: 4rem;
+  font-size: 2rem;
   color: var(--primary);
+}
+
+@media (min-width: 768px) {
+  .text-mod-nov {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 4rem;
+    color: var(--primary);
+  }
 }
 
 .form-nov {
@@ -40,7 +49,7 @@
   outline: none;
   transition: border-color 0.3s ease;
   text-align: start;
-  background-color:  whitesmoke;
+  background-color: whitesmoke;
 }
 
 @media (min-width: 768px) {

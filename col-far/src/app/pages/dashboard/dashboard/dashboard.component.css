@@ -2,7 +2,6 @@
   background-color: whitesmoke;
   display: flex;
   width: 100%;
-
 }
 
 .comp-sidebar {
@@ -12,9 +11,16 @@
 
 .farm-section {
   margin-top: 7.1rem;
-  display: flex;
+}
 
-  justify-content: center;
 
-  width: calc(100% - 30rem);
+@media (min-width: 769px) {
+  .farm-section {
+    margin-top: 7.1rem;
+    display: flex;
+
+    justify-content: center;
+
+    width: calc(100% - 30rem);
+  }
 }
