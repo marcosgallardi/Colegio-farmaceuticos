@@ -1,15 +1,30 @@
+.mod-turnos {
+  width: 100vw;
+}
+
+@media (min-width: 769px) {
+  .mod-turnos {
+    width: calc(100vw - 30rem);
+  }
+}
 .text-turnos {
   text-align: center;
   margin-top: 3rem;
-  font-size: 4rem;
+  font-size: 3rem;
   color: var(--primary);
 }
-.turnos-comp {
-  padding-top: 4rem;
+
+@media (min-width: 768px) {
+  .text-turnos {
+    font-size: 4rem;
+  }
 }
 
 .form-turnos {
-  margin-top: 4rem;
+  padding-top: 4rem;
+  max-width: 90%;
+  width: 60rem;
+  margin: 0 auto;
 }
 .head-turnos td {
   font-weight: 600;
@@ -17,7 +32,7 @@
 
 .button-turnos {
   padding: 1rem 1rem;
- 
+
   border: none;
   border-radius: 10px;
   font-size: 1.3rem;

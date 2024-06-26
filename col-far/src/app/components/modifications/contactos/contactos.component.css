@@ -1,8 +1,22 @@
+.mod-contact {
+  width: 100vw;
+}
+@media (min-width: 769px) {
+  .mod-contact {
+    width: calc(100vw - 30rem);
+  }
+}
 .text-contact {
   text-align: center;
   margin-top: 3rem;
-  font-size: 4rem;
+  font-size: 3rem;
   color: var(--primary);
+}
+
+@media (min-width: 768px) {
+  .text-contact {
+    font-size: 4rem;
+  }
 }
 
 .form-contacto {
@@ -13,9 +27,21 @@
 }
 .grid-form-cont {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   padding-bottom: 2rem;
   column-gap: 3rem;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .grid-form-cont {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1201px) {
+  .grid-form-cont {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 .label-contact {
   display: block;
@@ -40,7 +66,7 @@
   outline: none;
   transition: border-color 0.3s ease;
   text-align: start;
-  background-color:  whitesmoke;
+  background-color: whitesmoke;
 }
 
 @media (min-width: 768px) {
