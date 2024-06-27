@@ -3,7 +3,7 @@
 }
 @media (min-width: 769px) {
   .mod-contact {
-    width: calc(100vw - 30rem);
+    width: calc(100vw - 32rem);
   }
 }
 .text-contact {

@@ -22,6 +22,17 @@
   width: 16px;
 }
 
+.buttons-dashboard {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 769px) {
+  .buttons-dashboard {
+    display: block;
+  }
+}
+
 .color-btn-primary {
   background-color: var(--primary);
   color: white;
@@ -74,7 +85,7 @@
 
 .button-farm1 {
   padding: 1rem 1rem;
-  margin-left: 2rem;
+  margin-left: 5rem;
   border: none;
   border-radius: 10px;
   font-size: 1.3rem;

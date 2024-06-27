@@ -30,6 +30,7 @@
               <td>{{ farmacia.direccion }}</td>
               <td>({{ farmacia.caracteristica }}){{ farmacia.telefono }}</td>
               <td>{{ farmacia.caracteristica }}{{ farmacia.whatsapp }}</td>
+              @if (!isDashboard) {
               <td>
                 <div class="btn-group">
                   <a href="" class="btn color-btn-primary"
@@ -42,7 +43,9 @@
                     ><i class="bi bi-whatsapp"></i
                   ></a>
                 </div>
-                @if (isDashboard) {
+              </td>
+              } @if (isDashboard) {
+              <td class="buttons-dashboard">
                 <button
                   class="button-farm"
                   (click)="onClickButtons(farmacia.id)"
@@ -50,9 +53,8 @@
                   Modificar
                 </button>
                 <button class="button-farm1">Sacar</button>
-
-                }
               </td>
+              }
             </tr>
             }
           </tbody>

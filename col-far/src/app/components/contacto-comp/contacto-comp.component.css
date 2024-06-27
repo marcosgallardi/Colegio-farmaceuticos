@@ -8,7 +8,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: none;
     padding: 10rem 0;
-    gap: 5rem;
+    gap: 3rem;
     align-items: center;
   }
 }
@@ -17,6 +17,12 @@
   height: auto;
   margin: 0 auto;
   border-radius: 0.9rem;
+}
+
+.contacto-info {
+  width: 60rem;
+  margin: 0 auto;
+  padding-top: 2rem;
 }
 
 @media (min-width: 769px) {
@@ -34,7 +40,7 @@
 .contacto-info li {
   list-style-type: none;
   display: flex;
-  padding-left: 3rem;
+
   align-items: center;
 }
 .contacto-info li i {
