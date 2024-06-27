@@ -1,6 +1,12 @@
 .background-nov {
   background-color: whitesmoke;
-  padding: 10rem 0;
+  padding: 1rem 0;
+}
+
+@media (min-width: 769px) { 
+ .background-nov{
+  padding: 8rem 0;
+} 
 }
 
 .novedades {

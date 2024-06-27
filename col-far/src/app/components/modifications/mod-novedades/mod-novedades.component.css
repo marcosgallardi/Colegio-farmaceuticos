@@ -1,3 +1,13 @@
+.mod-novedades {
+  width: 100vw;
+}
+
+@media (min-width: 769px) {
+  .mod-novedades {
+    width: calc(100vw - 32rem);
+  }
+}
+
 .text-mod-nov {
   text-align: center;
   margin-top: 3rem;
@@ -21,10 +31,20 @@
 }
 .grid-form-nov {
   display: grid;
-
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   padding-bottom: 2rem;
   column-gap: 3rem;
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+  .grid-form-nov {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1441px) {
+  .grid-form-nov {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 .label-nov {
   display: block;
