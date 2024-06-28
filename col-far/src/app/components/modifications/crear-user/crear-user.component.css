@@ -1,16 +1,23 @@
 .createUser {
   display: flex;
   justify-content: center;
-
+  width: 100vw;
   flex-direction: column;
   height: calc(100vh - 13rem);
 }
 
 .text-creat-user {
   text-align: center;
-  margin-top: 3rem;
-  font-size: 4rem;
+  margin-top: 5rem;
+  font-size: 3rem;
   color: var(--primary);
+}
+
+@media (min-width: 768px) { 
+ .text-creat-user{
+  margin-top: 3rem;
+ font-size: 4rem;
+} 
 }
 .form-createUser {
   display: flex;
@@ -21,10 +28,16 @@
 
 .grid-create-user {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   padding-top: 2rem;
   padding-bottom: 2rem;
   column-gap: 3rem;
+}
+
+@media (min-width: 768px) { 
+ .grid-create-user{
+  grid-template-columns: repeat(2, 1fr);
+} 
 }
 
 .img-create {

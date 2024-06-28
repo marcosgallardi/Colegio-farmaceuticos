@@ -1,19 +1,38 @@
+.mod-atcUser {
+  width: 100vw;
+}
+
+@media (min-width: 769px) {
+  .mod-atcUser {
+    width: calc(100vw - 32rem);
+  }
+}
+
 .text-mod-users {
   text-align: center;
   margin-top: 3rem;
-  font-size: 4rem;
+  font-size: 3rem;
   color: var(--primary);
 }
-.custom-card-size {
-  max-width: 80rem;
-  width: 80rem;
+@media (min-width: 768px) {
+  .text-mod-users {
+    font-size: 4rem;
+  }
 }
+.custom-card-size {
+  max-width: 90%;
+  width: 80rem;
+  margin: 0 auto;
+}
+
 .rounded-imagen-perfil {
   width: 5rem;
   border-radius: 100%;
-  margin-left: 3rem;
+ 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade la sombra */
 }
+
+
 
 .button-mod-user {
   padding: 1rem 1rem;
@@ -55,9 +74,15 @@
 .grid-form-actUser {
   display: grid;
 
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   padding-bottom: 2rem;
   column-gap: 3rem;
+}
+
+@media (min-width: 768px) { 
+ .grid-form-actUser{
+  grid-template-columns: repeat(2, 1fr);
+} 
 }
 .label-actUser {
   display: block;
@@ -96,7 +121,7 @@
   outline: none;
   transition: border-color 0.3s ease;
   text-align: start;
-  background-color:  whitesmoke;
+  background-color: whitesmoke;
 }
 
 @media (min-width: 768px) {
